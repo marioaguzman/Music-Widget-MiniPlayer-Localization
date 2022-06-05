@@ -1,0 +1,6 @@
+/* Bundle name */
+"CFBundleName" = "Music Widget";
+/* Privacy - AppleEvents Sending Usage Description */
+"NSAppleEventsUsageDescription" = "Music Widget uses AppleEvents in order to interface with the Music app.";
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "Copyright © 2021-2022 Mario A Guzman\nAll rights reserved.";

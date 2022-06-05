@@ -22,7 +22,6 @@ Download: [https://marioaguzman.github.io/musicminiplayer](https://marioaguzman.
 - Italian
 
 ## Music Widget
-**Note**: Localizations files not yet in this repo
 
 Download: [https://marioaguzman.github.io/musicwidget](https://marioaguzman.github.io/musicwidget)
 
@@ -33,3 +32,9 @@ Download: [https://marioaguzman.github.io/musicwidget](https://marioaguzman.gith
 - Finnish 
 - German 
 - Polish
+
+### Repo includes files for:
+- French
+- French (Canadian)
+- Japanese
+- Italian

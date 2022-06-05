@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="dpP-Wj-Mfd">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="hku-2J-5Ig">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="dpP-Wj-Mfd" customClass="AppPreferencesWindowController" customModule="Music_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" toolbarStyle="preference" id="hJp-JV-cAP" customClass="AppPreferencesWindow" customModule="Music_Widget" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="440" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="dpP-Wj-Mfd" id="t0T-Xc-k3O"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="9cu-PR-JJL" kind="relationship" relationship="window.shadowedContentViewController" id="7YA-kn-sZK"/>
+                    </connections>
+                </windowController>
+                <customObject id="0FT-dy-q6z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="512"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AV5-Oi-prp">
+            <objects>
+                <viewController id="9cu-PR-JJL" sceneMemberID="viewController">
+                    <view key="view" id="9SC-fq-jpL" customClass="PinstripeView" customModule="Music_Widget" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="VQL-f8-GoJ"/>
+                        <viewLayoutGuide key="layoutMargins" id="h5v-SS-1JW"/>
+                    </view>
+                </viewController>
+                <customObject id="G6e-od-rD2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="512"/>
+        </scene>
+        <!--Updates-->
+        <scene sceneID="lVK-jG-zpT">
+            <objects>
+                <viewController title="Updates" storyboardIdentifier="Updates" showSeguePresentationStyle="single" id="U1J-jw-Spa" customClass="UpdatePreferencesViewController" customModule="Music_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="mhv-yF-ckw">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="183"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView horizontalHuggingPriority="248" verticalHuggingPriority="600" xPlacement="fill" yPlacement="top" rowAlignment="firstBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="z8u-NT-bEk">
+                                <rect key="frame" x="59" y="91" width="322" height="72"/>
+                                <rows>
+                                    <gridRow id="0W9-v2-NmQ"/>
+                                    <gridRow yPlacement="top" id="hGG-qL-di2"/>
+                                    <gridRow topPadding="8" id="NQL-ch-Kr4"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn xPlacement="leading" id="Q0b-lI-7jV"/>
+                                    <gridColumn xPlacement="leading" id="voE-bj-LFU"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="0W9-v2-NmQ" column="Q0b-lI-7jV" xPlacement="trailing" id="fUu-tY-gQn">
+                                        <textField key="contentView" horizontalHuggingPriority="749" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qkB-x1-VLW">
+                                            <rect key="frame" x="-2" y="56" width="89" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="App Updates:" id="3RT-9N-wIm">
+                                                <font key="font" metaFont="systemMedium" size="13"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="0W9-v2-NmQ" column="voE-bj-LFU" id="c4g-K4-pTa">
+                                        <button key="contentView" horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-Nl-Y5R">
+                                            <rect key="frame" x="89" y="55" width="225" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Automatically Check for Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jY1-E5-teb">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="U1J-jw-Spa" name="value" keyPath="self.updater.updater.automaticallyChecksForUpdates" id="tzR-4b-7N3"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hGG-qL-di2" column="Q0b-lI-7jV" id="be4-qX-jVz"/>
+                                    <gridCell row="hGG-qL-di2" column="voE-bj-LFU" id="WVU-pb-fB2">
+                                        <button key="contentView" horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xnq-Fe-NY5">
+                                            <rect key="frame" x="89" y="33" width="233" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Automatically Downloads Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bWq-at-TWg">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="U1J-jw-Spa" name="enabled" keyPath="self.updater.updater.automaticallyChecksForUpdates" id="IY1-vu-fBf"/>
+                                                <binding destination="U1J-jw-Spa" name="value" keyPath="self.updater.updater.automaticallyDownloadsUpdates" id="7HP-Hz-FUG"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="NQL-ch-Kr4" column="Q0b-lI-7jV" xPlacement="trailing" id="9xd-1D-XKw">
+                                        <textField key="contentView" horizontalHuggingPriority="749" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TDA-jd-bpa">
+                                            <rect key="frame" x="13" y="3" width="74" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Frequency:" id="clz-ky-mxP">
+                                                <font key="font" metaFont="systemMedium" size="13"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="NQL-ch-Kr4" column="voE-bj-LFU" id="sag-Su-vQN">
+                                        <popUpButton key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ALj-RR-MWu">
+                                            <rect key="frame" x="88" y="-4" width="88" height="25"/>
+                                            <popUpButtonCell key="cell" type="push" title="Hourly" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="3600" imageScaling="proportionallyDown" inset="2" selectedItem="Tb7-kg-ZHP" id="043-TX-CPp">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="kh5-eg-jDk">
+                                                    <items>
+                                                        <menuItem title="Hourly" state="on" tag="3600" id="Tb7-kg-ZHP"/>
+                                                        <menuItem title="Daily" tag="86400" id="tg8-uG-BrF"/>
+                                                        <menuItem title="Weekly" tag="604800" id="cvL-ps-daB"/>
+                                                        <menuItem title="Monthly" tag="2629800" id="WE6-qw-PH5">
+                                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                                        </menuItem>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="U1J-jw-Spa" name="enabled" keyPath="self.updater.updater.automaticallyChecksForUpdates" id="Ui4-hF-lRp"/>
+                                                <binding destination="U1J-jw-Spa" name="selectedTag" keyPath="self.updater.updater.updateCheckInterval" id="tn3-bb-qCY"/>
+                                            </connections>
+                                        </popUpButton>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                            <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="3" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8SL-Mr-7mU">
+                                <rect key="frame" x="166" y="20" width="109" height="14"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mNE-DR-3cO">
+                                        <rect key="frame" x="-2" y="0.0" width="76" height="14"/>
+                                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Last Checked" id="hfA-h1-trm">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6wB-FY-5Qm">
+                                        <rect key="frame" x="73" y="0.0" width="38" height="14"/>
+                                        <textFieldCell key="cell" controlSize="small" alignment="left" title="[Date]" id="Mxl-Vc-u2u">
+                                            <dateFormatter key="formatter" dateStyle="long" timeStyle="short" id="HN0-2c-iWH"/>
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="U1J-jw-Spa" name="value" keyPath="self.updater.updater.lastUpdateCheckDate" id="ZXe-kn-zp8"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="zEh-L9-nkx"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                                <connections>
+                                    <binding destination="U1J-jw-Spa" name="hidden" keyPath="self.updater.updater.lastUpdateCheckDate" id="K3P-5G-H87">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSIsNil</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </stackView>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yxj-UD-p4l">
+                                <rect key="frame" x="143" y="33" width="155" height="32"/>
+                                <buttonCell key="cell" type="push" title=" Check for Updates " bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mVI-5e-4Kz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-hU-OZf">
+                                <rect key="frame" x="20" y="72" width="400" height="5"/>
+                            </box>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gup-iu-wtJ">
+                                <rect key="frame" x="17" y="16" width="25" height="25"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kdo-sm-Jev">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="helpButtonAction:" target="U1J-jw-Spa" id="U98-py-ccu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gM6-hU-OZf" firstAttribute="top" secondItem="z8u-NT-bEk" secondAttribute="bottom" constant="16" id="5R7-Gg-Bxu"/>
+                            <constraint firstItem="8SL-Mr-7mU" firstAttribute="centerX" secondItem="mhv-yF-ckw" secondAttribute="centerX" priority="250" id="66u-Cr-fJf"/>
+                            <constraint firstItem="8SL-Mr-7mU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gup-iu-wtJ" secondAttribute="trailing" constant="8" id="7oM-ZY-SDm"/>
+                            <constraint firstItem="Yxj-UD-p4l" firstAttribute="centerX" secondItem="mhv-yF-ckw" secondAttribute="centerX" id="CsD-gL-oSy"/>
+                            <constraint firstItem="z8u-NT-bEk" firstAttribute="top" secondItem="mhv-yF-ckw" secondAttribute="top" constant="20" symbolic="YES" id="Ex8-A5-yRI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z8u-NT-bEk" secondAttribute="trailing" constant="20" symbolic="YES" id="GmC-4c-fsZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gM6-hU-OZf" secondAttribute="trailing" constant="20" symbolic="YES" id="Hcl-9s-EIK"/>
+                            <constraint firstAttribute="bottom" secondItem="8SL-Mr-7mU" secondAttribute="bottom" constant="20" symbolic="YES" id="ITr-Gj-AJP"/>
+                            <constraint firstAttribute="bottom" secondItem="gup-iu-wtJ" secondAttribute="bottom" constant="20" symbolic="YES" id="P1c-h6-Pfa"/>
+                            <constraint firstItem="gup-iu-wtJ" firstAttribute="leading" secondItem="mhv-yF-ckw" secondAttribute="leading" constant="20" symbolic="YES" id="R6H-cl-1tn"/>
+                            <constraint firstItem="gM6-hU-OZf" firstAttribute="leading" secondItem="mhv-yF-ckw" secondAttribute="leading" constant="20" symbolic="YES" id="RY9-K5-c3i"/>
+                            <constraint firstItem="8SL-Mr-7mU" firstAttribute="top" secondItem="Yxj-UD-p4l" secondAttribute="bottom" constant="6" id="cvz-9y-cT4"/>
+                            <constraint firstItem="Yxj-UD-p4l" firstAttribute="top" secondItem="gM6-hU-OZf" secondAttribute="bottom" constant="14" id="hPm-2p-Jj2"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8SL-Mr-7mU" secondAttribute="trailing" constant="20" symbolic="YES" id="w0i-t0-ZLE"/>
+                            <constraint firstItem="z8u-NT-bEk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mhv-yF-ckw" secondAttribute="leading" constant="20" symbolic="YES" id="yOT-8M-UK0"/>
+                            <constraint firstItem="z8u-NT-bEk" firstAttribute="centerX" secondItem="mhv-yF-ckw" secondAttribute="centerX" id="zLd-TU-wD9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="updateButton" destination="Yxj-UD-p4l" id="xCu-Yy-P02"/>
+                    </connections>
+                </viewController>
+                <customObject id="JHP-RD-NFI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController id="7xC-hC-KjX"/>
+            </objects>
+            <point key="canvasLocation" x="1378" y="865"/>
+        </scene>
+        <!--Interface-->
+        <scene sceneID="MEy-Qh-eh6">
+            <objects>
+                <viewController title="Interface" storyboardIdentifier="Interface" showSeguePresentationStyle="single" id="xTU-I5-lwH" customClass="InterfacePreferencesViewController" customModule="Music_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="UuX-qN-TEx">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="164"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView horizontalHuggingPriority="248" verticalHuggingPriority="600" xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="F5Z-5C-VdR">
+                                <rect key="frame" x="20" y="20" width="400" height="124"/>
+                                <rows>
+                                    <gridRow id="Xz4-C4-orZ"/>
+                                    <gridRow id="dgV-tl-gfD"/>
+                                    <gridRow topPadding="8" id="uwr-1B-2Fm"/>
+                                    <gridRow id="gNb-jy-hdr"/>
+                                    <gridRow id="odq-Ie-thK"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="iFJ-q8-fiK"/>
+                                    <gridColumn width="14" id="Hjv-ys-B4H"/>
+                                    <gridColumn xPlacement="leading" id="E0u-10-stQ"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="Xz4-C4-orZ" column="iFJ-q8-fiK" xPlacement="trailing" yPlacement="top" id="EXz-FS-vj0">
+                                        <textField key="contentView" horizontalHuggingPriority="749" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-YY-ec9">
+                                            <rect key="frame" x="23" y="108" width="58" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Window:" id="9Ps-gN-xEU">
+                                                <font key="font" metaFont="systemMedium" size="13"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="Xz4-C4-orZ" column="Hjv-ys-B4H" headOfMergedCell="cMo-jZ-AXz" id="cMo-jZ-AXz">
+                                        <stackView key="contentView" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNL-Bq-ChG">
+                                            <rect key="frame" x="85" y="108" width="212" height="16"/>
+                                            <subviews>
+                                                <button toolTip="Keeps Music Widget always visible by keeping above all other app windows" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-lh-brO">
+                                                    <rect key="frame" x="-2" y="-1" width="214" height="18"/>
+                                                    <buttonCell key="cell" type="check" title="Keep Above All Other Windows" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="UGd-Xj-x6T">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <binding destination="XdY-1V-TPP" name="value" keyPath="values.KeepMainWindowAboveAllOtherWindows" id="nXK-x7-GPs"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <visibilityPriorities>
+                                                <integer value="1000"/>
+                                            </visibilityPriorities>
+                                            <customSpacing>
+                                                <real value="3.4028234663852886e+38"/>
+                                            </customSpacing>
+                                        </stackView>
+                                    </gridCell>
+                                    <gridCell row="Xz4-C4-orZ" column="E0u-10-stQ" headOfMergedCell="cMo-jZ-AXz" id="kYn-lh-kUi"/>
+                                    <gridCell row="dgV-tl-gfD" column="iFJ-q8-fiK" id="Hed-ol-889"/>
+                                    <gridCell row="dgV-tl-gfD" column="Hjv-ys-B4H" id="CTF-bw-CY7"/>
+                                    <gridCell row="dgV-tl-gfD" column="E0u-10-stQ" id="cHr-kQ-fbx">
+                                        <textField key="contentView" verticalHuggingPriority="750" horizontalCompressionResistancePriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-vM-fXN">
+                                            <rect key="frame" x="103" y="74" width="299" height="28"/>
+                                            <textFieldCell key="cell" allowsUndo="NO" title="This option is also available in the Window menu in the app's menu bar." id="ZrU-wT-NJK">
+                                                <font key="font" metaFont="message" size="11"/>
+                                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="uwr-1B-2Fm" column="iFJ-q8-fiK" xPlacement="trailing" yPlacement="top" id="bVD-sb-opM">
+                                        <textField key="contentView" horizontalHuggingPriority="749" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vhH-xf-0ok">
+                                            <rect key="frame" x="-2" y="44" width="83" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Appearance:" id="efK-8v-mxP">
+                                                <font key="font" metaFont="systemMedium" size="13"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="uwr-1B-2Fm" column="Hjv-ys-B4H" headOfMergedCell="KCr-TS-wUL" id="KCr-TS-wUL">
+                                        <button key="contentView" toolTip="Keeps Music Widget in light mode to match the classic iTunes widget" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-ve-cCj">
+                                            <rect key="frame" x="83" y="43" width="180" height="18"/>
+                                            <buttonCell key="cell" type="radio" title="Keep Classic Appearance" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="M5Z-LT-hOZ">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="appearanceRadioButtonDidChange:" target="xTU-I5-lwH" id="Vb8-DH-GRJ"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="uwr-1B-2Fm" column="E0u-10-stQ" headOfMergedCell="KCr-TS-wUL" id="wIR-mm-TP2"/>
+                                    <gridCell row="gNb-jy-hdr" column="iFJ-q8-fiK" id="Vkb-sI-o9S"/>
+                                    <gridCell row="gNb-jy-hdr" column="Hjv-ys-B4H" headOfMergedCell="oCo-UU-IUf" id="oCo-UU-IUf">
+                                        <button key="contentView" toolTip="Allows Music Widget to switch between light and dark mode based on what is set in System Preferences" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2lp-RE-3ql">
+                                            <rect key="frame" x="83" y="21" width="189" height="18"/>
+                                            <buttonCell key="cell" type="radio" title="Match System Appearance" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ZCM-Rz-k5X">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="appearanceRadioButtonDidChange:" target="xTU-I5-lwH" id="zvc-bp-CoX"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="gNb-jy-hdr" column="E0u-10-stQ" headOfMergedCell="oCo-UU-IUf" id="SRg-p2-bwm"/>
+                                    <gridCell row="odq-Ie-thK" column="iFJ-q8-fiK" id="mNA-UX-sh7"/>
+                                    <gridCell row="odq-Ie-thK" column="Hjv-ys-B4H" id="FXC-DN-bOr"/>
+                                    <gridCell row="odq-Ie-thK" column="E0u-10-stQ" id="90z-0x-0Wo">
+                                        <button key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b0d-S9-N3N">
+                                            <rect key="frame" x="103" y="-1" width="135" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Update Dock icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6a2-0S-rFp">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="XdY-1V-TPP" name="enabled" keyPath="values.AppearanceClassic" id="2Hp-EX-mds">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <binding destination="XdY-1V-TPP" name="value" keyPath="values.AppearanceUpdatesDockIcon" id="des-nx-QmK"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="F5Z-5C-VdR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UuX-qN-TEx" secondAttribute="leading" constant="20" symbolic="YES" id="7iX-vK-F0T"/>
+                            <constraint firstAttribute="bottom" secondItem="F5Z-5C-VdR" secondAttribute="bottom" constant="20" symbolic="YES" id="G0n-3b-60W"/>
+                            <constraint firstItem="F5Z-5C-VdR" firstAttribute="centerX" secondItem="UuX-qN-TEx" secondAttribute="centerX" id="kO9-RW-ICU"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F5Z-5C-VdR" secondAttribute="trailing" constant="20" symbolic="YES" id="mDt-Ys-uZi"/>
+                            <constraint firstItem="F5Z-5C-VdR" firstAttribute="top" secondItem="UuX-qN-TEx" secondAttribute="top" constant="20" symbolic="YES" id="nfK-vm-pv6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appearanceClassic" destination="NAf-ve-cCj" id="IWK-WH-edQ"/>
+                        <outlet property="appearanceSystem" destination="2lp-RE-3ql" id="fgt-1L-TzY"/>
+                        <outlet property="dockIconAppearance" destination="b0d-S9-N3N" id="uNg-Ms-sdu"/>
+                    </connections>
+                </viewController>
+                <customObject id="gjx-Im-BKq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController id="aY1-4f-PPg"/>
+                <userDefaultsController representsSharedInstance="YES" id="XdY-1V-TPP"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="855"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="ACd-VU-7vA">
+            <objects>
+                <customObject id="ZPZ-bN-SC3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController title="General" storyboardIdentifier="General" showSeguePresentationStyle="single" id="i3P-ZJ-yzP" customClass="PreferencesViewController" customModule="Music_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="CNq-KF-igD">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="142"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView horizontalHuggingPriority="248" verticalHuggingPriority="600" xPlacement="fill" yPlacement="top" rowAlignment="firstBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="MSk-yL-beb">
+                                <rect key="frame" x="20" y="20" width="400" height="102"/>
+                                <rows>
+                                    <gridRow yPlacement="fill" id="asf-qV-mlk"/>
+                                    <gridRow id="ROh-nr-q1N"/>
+                                    <gridRow id="hCE-DS-vlA"/>
+                                    <gridRow topPadding="8" id="XJw-eR-ZVr"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn xPlacement="trailing" id="Lwe-iu-wlN"/>
+                                    <gridColumn xPlacement="leading" width="14" id="2RG-gh-VKY"/>
+                                    <gridColumn id="eLS-QZ-17L"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="asf-qV-mlk" column="Lwe-iu-wlN" id="GWr-Or-Xgd">
+                                        <textField key="contentView" horizontalHuggingPriority="749" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-mO-yrL">
+                                            <rect key="frame" x="-2" y="86" width="76" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Time Label:" id="J4k-hG-qgP">
+                                                <font key="font" metaFont="systemMedium" size="13"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="asf-qV-mlk" column="2RG-gh-VKY" headOfMergedCell="5kw-8L-brg" id="5kw-8L-brg">
+                                        <button key="contentView" toolTip="Displays the current position of the track in time" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="91y-ef-HnU">
+                                            <rect key="frame" x="76" y="85" width="104" height="18"/>
+                                            <buttonCell key="cell" type="radio" title="Elapsed time" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="qPV-nR-3CN">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="timeRadioButtonDidChange:" target="i3P-ZJ-yzP" id="re0-zD-vTm"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="asf-qV-mlk" column="eLS-QZ-17L" headOfMergedCell="5kw-8L-brg" id="y0v-AL-6u0"/>
+                                    <gridCell row="ROh-nr-q1N" column="Lwe-iu-wlN" id="dad-Ib-Q5P"/>
+                                    <gridCell row="ROh-nr-q1N" column="2RG-gh-VKY" headOfMergedCell="FFv-er-Qcv" id="FFv-er-Qcv">
+                                        <button key="contentView" toolTip="Displays the time remaining for the track to end" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AO8-fs-1Zg">
+                                            <rect key="frame" x="76" y="63" width="119" height="18"/>
+                                            <buttonCell key="cell" type="radio" title="Remaining time" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Gt0-gT-uSx">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="timeRadioButtonDidChange:" target="i3P-ZJ-yzP" id="pRh-9H-NTH"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="ROh-nr-q1N" column="eLS-QZ-17L" headOfMergedCell="FFv-er-Qcv" id="yOQ-JW-cb1"/>
+                                    <gridCell row="hCE-DS-vlA" column="Lwe-iu-wlN" id="3Uq-kw-enK"/>
+                                    <gridCell row="hCE-DS-vlA" column="2RG-gh-VKY" id="dDb-43-AYX"/>
+                                    <gridCell row="hCE-DS-vlA" column="eLS-QZ-17L" id="Riy-8B-WWQ">
+                                        <textField key="contentView" verticalHuggingPriority="750" horizontalCompressionResistancePriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="lZ2-xY-icz">
+                                            <rect key="frame" x="96" y="30" width="306" height="28"/>
+                                            <textFieldCell key="cell" allowsUndo="NO" title="Display the elapsed time or remaining time of the current track in the LCD display." id="Zf0-JL-dv5">
+                                                <font key="font" metaFont="message" size="11"/>
+                                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="XJw-eR-ZVr" column="Lwe-iu-wlN" id="Waa-aa-zbu">
+                                        <textField key="contentView" horizontalHuggingPriority="749" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="viQ-XM-IvX">
+                                            <rect key="frame" x="13" y="0.0" width="61" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Controls:" id="Brs-k7-YJD">
+                                                <font key="font" metaFont="systemMedium" size="13"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <attributedString key="userComments">
+                                                <fragment content="General Preferences &quot;Controls&quot; Section Header"/>
+                                            </attributedString>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="XJw-eR-ZVr" column="2RG-gh-VKY" headOfMergedCell="G0x-oi-2S4" id="G0x-oi-2S4">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hU0-EI-gV7">
+                                            <rect key="frame" x="76" y="-1" width="158" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Show Volume buttons" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kx2-CZ-UiD">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <attributedString key="userComments">
+                                                <fragment content="Checkbox to show (or hide) the volume buttons"/>
+                                            </attributedString>
+                                            <connections>
+                                                <binding destination="OPf-pp-mZ3" name="value" keyPath="values.VolumeButtonsHidden" id="dhf-it-kXj">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="XJw-eR-ZVr" column="eLS-QZ-17L" headOfMergedCell="G0x-oi-2S4" id="UmP-bF-LGe"/>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MSk-yL-beb" secondAttribute="bottom" constant="20" symbolic="YES" id="9d3-Br-qi3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MSk-yL-beb" secondAttribute="trailing" constant="20" symbolic="YES" id="BrQ-tx-FmR"/>
+                            <constraint firstItem="MSk-yL-beb" firstAttribute="centerX" secondItem="CNq-KF-igD" secondAttribute="centerX" id="GsV-gS-QJh"/>
+                            <constraint firstItem="MSk-yL-beb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CNq-KF-igD" secondAttribute="leading" constant="20" symbolic="YES" id="ft3-VR-6Sh"/>
+                            <constraint firstItem="MSk-yL-beb" firstAttribute="top" secondItem="CNq-KF-igD" secondAttribute="top" constant="20" symbolic="YES" id="h3B-b6-4uj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="radioButtonElapsedTime" destination="91y-ef-HnU" id="079-DF-4aG"/>
+                        <outlet property="radioButtonRemainingTime" destination="AO8-fs-1Zg" id="cl8-EE-Qus"/>
+                        <outlet property="userDefaultsController" destination="OPf-pp-mZ3" id="Sp8-f9-C2B"/>
+                    </connections>
+                </viewController>
+                <userDefaultsController id="OPf-pp-mZ3"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="844"/>
+        </scene>
+    </scenes>
+</document>
