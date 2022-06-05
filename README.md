@@ -1,4 +1,4 @@
-# Music-Widget-MiniPlayer-Localization
+# Music Widget and Music MiniPlayer Localization
 
 Good source for Localization Examples and Hints: [Apple Localization Terms Glossary](https://applelocalization.com/macos)
 
