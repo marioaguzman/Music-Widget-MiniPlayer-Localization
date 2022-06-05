@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/Localizable.strings" source-language="en" target-language="fi" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="0:00" xml:space="preserve">
+        <source>0:00</source>
+        <target>0:00</target>
+        <note>For UI labels: 0:00</note>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target>Teitoja: Music MiniPlayer</target>
+        <note>About window title</note>
+      </trans-unit>
+      <trans-unit id="Album" xml:space="preserve">
+        <source>Album</source>
+        <target>Albumi</target>
+        <note>For UI labels: Album</note>
+      </trans-unit>
+      <trans-unit id="Artist" xml:space="preserve">
+        <source>Artist</source>
+        <target>Esittäjä</target>
+        <note>For UI labels: Artist</note>
+      </trans-unit>
+      <trans-unit id="Drawer is closed" xml:space="preserve">
+        <source>Drawer is closed</source>
+        <target>Vetolaatikko on kiinni</target>
+        <note>Accessibility Description: Drawer Closed</note>
+      </trans-unit>
+      <trans-unit id="Drawer is open" xml:space="preserve">
+        <source>Drawer is open</source>
+        <target>Vetolaatikko on auki</target>
+        <note>Accessibility Description: Drawer Open</note>
+      </trans-unit>
+      <trans-unit id="Duration" xml:space="preserve">
+        <source>Duration</source>
+        <target>Kappaleen kesto</target>
+        <note>For UI labels: Duration</note>
+      </trans-unit>
+      <trans-unit id="Elapsed Time" xml:space="preserve">
+        <source>Elapsed Time</source>
+        <target>Kulunut aika</target>
+        <note>For UI labels: Elapsed Time</note>
+      </trans-unit>
+      <trans-unit id="Fast Forward" xml:space="preserve">
+        <source>Fast Forward</source>
+        <target>Kelaa eteenpäin</target>
+        <note>For UI labels: Fast Forward</note>
+      </trans-unit>
+      <trans-unit id="General" xml:space="preserve">
+        <source>General</source>
+        <target>Yleiset</target>
+        <note>Title for General tab</note>
+      </trans-unit>
+      <trans-unit id="Interface" xml:space="preserve">
+        <source>Interface</source>
+        <target>Käyttöliittymä</target>
+        <note>Title for Interface tab</note>
+      </trans-unit>
+      <trans-unit id="Keep Above All Other Windows" xml:space="preserve">
+        <source>Keep Above All Other Windows</source>
+        <target>Pidä muiden ikkunoiden päällä</target>
+        <note>For Menu Command labels: Keep Above All Other Windows</note>
+      </trans-unit>
+      <trans-unit id="Live Stream" xml:space="preserve">
+        <source>Live Stream</source>
+        <target>Suora lähetys</target>
+        <note>For UI labels: Live Stream</note>
+      </trans-unit>
+      <trans-unit id="Music is not open" xml:space="preserve">
+        <source>Music is not open</source>
+        <target>Musiikki ei ole avoinna</target>
+        <note>'Music is not open' displayed in LCD</note>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <target>Seuraava</target>
+        <note>For UI labels: Next</note>
+      </trans-unit>
+      <trans-unit id="No Song" xml:space="preserve">
+        <source>No Song</source>
+        <target>Ei kappaletta</target>
+        <note>'No Song' displayed in LCD</note>
+      </trans-unit>
+      <trans-unit id="Now Playing" xml:space="preserve">
+        <source>Now Playing</source>
+        <target>Toistetaan parhaillaan</target>
+        <note>For UI labels: Now Playing</note>
+      </trans-unit>
+      <trans-unit id="Open &quot;Music&quot;" xml:space="preserve">
+        <source>Open "Music"</source>
+        <target>Avaa 'Musiikki'</target>
+        <note>Command to open main Music app
+   For Menu Command labels: Open \"Music\"</note>
+      </trans-unit>
+      <trans-unit id="Pause" xml:space="preserve">
+        <source>Pause</source>
+        <target>Tauko</target>
+        <note>For UI labels: Pause</note>
+      </trans-unit>
+      <trans-unit id="Play" xml:space="preserve">
+        <source>Play</source>
+        <target>Toista</target>
+        <note>For UI labels: Play</note>
+      </trans-unit>
+      <trans-unit id="Play or pause the current track" xml:space="preserve">
+        <source>Play or pause the current track</source>
+        <target>Toista tai keskeytä nykyinen kappale</target>
+        <note>For UI labels: Play or pause the current track</note>
+      </trans-unit>
+      <trans-unit id="Play or stop playing live audio" xml:space="preserve">
+        <source>Play or stop playing live audio</source>
+        <target>Aloita tai lopeta suoran lähetyksen toisto</target>
+        <note>For UI labels: Play or stop playing live audio</note>
+      </trans-unit>
+      <trans-unit id="Preferences" xml:space="preserve">
+        <source>Preferences</source>
+        <target>Asetukset</target>
+        <note>Window Title for Preferences</note>
+      </trans-unit>
+      <trans-unit id="Previous" xml:space="preserve">
+        <source>Previous</source>
+        <target>Edellinen</target>
+        <note>For UI labels: Previous</note>
+      </trans-unit>
+      <trans-unit id="Remaining Time" xml:space="preserve">
+        <source>Remaining Time</source>
+        <target>Jäljellä oleva aika</target>
+        <note>For UI labels: Remaining Time</note>
+      </trans-unit>
+      <trans-unit id="Repeat All" xml:space="preserve">
+        <source>Repeat All</source>
+        <target>Toista kaikki uudelleen</target>
+        <note>Accessibility Description: Repeat All</note>
+      </trans-unit>
+      <trans-unit id="Repeat None" xml:space="preserve">
+        <source>Repeat None</source>
+        <target>Älä toista uudelleen</target>
+        <note>Accessibility Description: Repeat None</note>
+      </trans-unit>
+      <trans-unit id="Repeat One" xml:space="preserve">
+        <source>Repeat One</source>
+        <target>Toista yksi kappale uudelleen</target>
+        <note>Accessibility Description: Repeat One</note>
+      </trans-unit>
+      <trans-unit id="Rewind" xml:space="preserve">
+        <source>Rewind</source>
+        <target>Kelaa taaksepäin</target>
+        <note>For UI labels: Rewind</note>
+      </trans-unit>
+      <trans-unit id="Shuffle Off" xml:space="preserve">
+        <source>Shuffle Off</source>
+        <target>Satunnaistoisto pois</target>
+        <note>Accessibility Description: Shuffle Off</note>
+      </trans-unit>
+      <trans-unit id="Shuffle On" xml:space="preserve">
+        <source>Shuffle On</source>
+        <target> Satunnaistoisto päällä</target>
+        <note>Accessibility Description: Shuffle On</note>
+      </trans-unit>
+      <trans-unit id="Snap Back" xml:space="preserve">
+        <source>Snap Back</source>
+        <target>Snap Back</target>
+        <note>For UI labels: Snap Back (Shows current song in Music app)</note>
+      </trans-unit>
+      <trans-unit id="Stop" xml:space="preserve">
+        <source>Stop</source>
+        <target>Pysäytä</target>
+        <note>For UI labels: Stop</note>
+      </trans-unit>
+      <trans-unit id="Streaming Track" xml:space="preserve">
+        <source>Streaming Track</source>
+        <target>Suoratoistokappale</target>
+        <note>For UI labels: Streaming Track</note>
+      </trans-unit>
+      <trans-unit id="Track" xml:space="preserve">
+        <source>Track</source>
+        <target>Kappale</target>
+        <note>For UI labels: Track</note>
+      </trans-unit>
+      <trans-unit id="Updates" xml:space="preserve">
+        <source>Updates</source>
+        <target>Päivitykset</target>
+        <note>Title for Updates tab</note>
+      </trans-unit>
+      <trans-unit id="Volume Down" xml:space="preserve">
+        <source>Volume Down</source>
+        <target>Vähennä äänenvoimakkuutta</target>
+        <note>For UI labels: Volume Down</note>
+      </trans-unit>
+      <trans-unit id="Volume Up" xml:space="preserve">
+        <source>Volume Up</source>
+        <target>Lisää äänenvoimakkuutta</target>
+        <note>For UI labels: Volume Up</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="en.lproj/Music-MiniPlayer-InfoPlist.strings" source-language="en" target-language="fi" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Music MiniPlayer</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSAppleEventsUsageDescription" xml:space="preserve">
+        <source>Music MiniPlayer uses AppleEvents in order to interface with the Music app.</source>
+        <target>Music MiniPlayer käyttää AppleEvents-järjestelmää.</target>
+        <note>Privacy - AppleEvents Sending Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2022 Mario A Guzman
+All rights reserved.</source>
+        <target>© 2022 Mario A Guzman
+Kaikki oikeudet pidätetään</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Music MiniPlayer/Base.lproj/Main.storyboard" source-language="en" target-language="fi" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="1Xt-HY-uBw.title" xml:space="preserve">
+        <source>Music MiniPlayer</source>
+        <target>Music MiniPlayer</target>
+        <note>Class = "NSMenuItem"; title = "Music MiniPlayer"; ObjectID = "1Xt-HY-uBw";</note>
+      </trans-unit>
+      <trans-unit id="2cu-2G-bdz.title" xml:space="preserve">
+        <source>Volume Up</source>
+        <target>Lisää äänenvoimakkuutta</target>
+        <note>Class = "NSMenuItem"; title = "Volume Up"; ObjectID = "2cu-2G-bdz";</note>
+      </trans-unit>
+      <trans-unit id="4sb-4s-VLi.title" xml:space="preserve">
+        <source>Quit Music MiniPlayer</source>
+        <target>Lopeta Music MiniPlayer</target>
+        <note>Class = "NSMenuItem"; title = "Quit Music MiniPlayer"; ObjectID = "4sb-4s-VLi";</note>
+      </trans-unit>
+      <trans-unit id="5kV-Vb-QxS.title" xml:space="preserve">
+        <source>About Music MiniPlayer</source>
+        <target>Tietoja Music MiniPlayeristä</target>
+        <note>Class = "NSMenuItem"; title = "About Music MiniPlayer"; ObjectID = "5kV-Vb-QxS";</note>
+      </trans-unit>
+      <trans-unit id="8XE-lj-Wco.title" xml:space="preserve">
+        <source>Volume Down</source>
+        <target>Vähennä äänenvoimakkuutta</target>
+        <note>Class = "NSMenuItem"; title = "Volume Down"; ObjectID = "8XE-lj-Wco";</note>
+      </trans-unit>
+      <trans-unit id="AYu-sK-qS6.title" xml:space="preserve">
+        <source>Main Menu</source>
+        <target>Päävalikko</target>
+        <note>Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6";</note>
+      </trans-unit>
+      <trans-unit id="BLC-LX-O2Y.title" xml:space="preserve">
+        <source>Close</source>
+        <target>Sulje</target>
+        <note>Class = "NSMenuItem"; title = "Close"; ObjectID = "BLC-LX-O2Y";</note>
+      </trans-unit>
+      <trans-unit id="BOF-NM-1cW.title" xml:space="preserve">
+        <source>Preferences…</source>
+        <target>Asetukset…</target>
+        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW";</note>
+      </trans-unit>
+      <trans-unit id="Brn-QC-pDw.ibShadowedToolTip" xml:space="preserve">
+        <source>Elapsed time</source>
+        <target>Kulunut aika</target>
+        <note>Class = "NSTextField"; ibShadowedToolTip = "Elapsed time"; ObjectID = "Brn-QC-pDw";</note>
+      </trans-unit>
+      <trans-unit id="BxZ-Bi-91G.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Shuffle</source>
+        <target>Sekoita</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Shuffle"; ObjectID = "BxZ-Bi-91G";</note>
+      </trans-unit>
+      <trans-unit id="BxZ-Bi-91G.ibShadowedToolTip" xml:space="preserve">
+        <source>Set shuffle on or off</source>
+        <target>Aseta satunnaistoisto päälle tai pois</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Set shuffle on or off"; ObjectID = "BxZ-Bi-91G";</note>
+      </trans-unit>
+      <trans-unit id="DZ8-Co-jYJ.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Drawer</source>
+        <target>Vetolaatikko</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Drawer"; ObjectID = "DZ8-Co-jYJ";</note>
+      </trans-unit>
+      <trans-unit id="DZ8-Co-jYJ.ibShadowedToolTip" xml:space="preserve">
+        <source>Hide or show the drawer</source>
+        <target>Avaa tai sulje vetolaatikko</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Hide or show the drawer"; ObjectID = "DZ8-Co-jYJ";</note>
+      </trans-unit>
+      <trans-unit id="DiE-yb-1qh.title" xml:space="preserve">
+        <source>LIVE</source>
+        <target>SUORA</target>
+        <note>Class = "NSTextFieldCell"; title = "LIVE"; ObjectID = "DiE-yb-1qh";</note>
+      </trans-unit>
+      <trans-unit id="F2S-fz-NVQ.title" xml:space="preserve">
+        <source>Help</source>
+        <target>Ohje</target>
+        <note>Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ";</note>
+      </trans-unit>
+      <trans-unit id="FKE-Sm-Kum.title" xml:space="preserve">
+        <source>Music MiniPlayer Help</source>
+        <target>Music MiniPlayer -ohje</target>
+        <note>Class = "NSMenuItem"; title = "Music MiniPlayer Help"; ObjectID = "FKE-Sm-Kum";</note>
+      </trans-unit>
+      <trans-unit id="GEO-Iw-cKr.title" xml:space="preserve">
+        <source>Controls</source>
+        <target>Ohjaus</target>
+        <note>Class = "NSMenu"; title = "Controls"; ObjectID = "GEO-Iw-cKr";</note>
+      </trans-unit>
+      <trans-unit id="HHN-x8-oxC.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Mute Volume</source>
+        <target>Mykistys</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Mute Volume"; ObjectID = "HHN-x8-oxC";</note>
+      </trans-unit>
+      <trans-unit id="HHN-x8-oxC.ibShadowedToolTip" xml:space="preserve">
+        <source>Mute the Music app's volume</source>
+        <target>Mykistä Musiikki-sovellus</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Mute the Music app's volume"; ObjectID = "HHN-x8-oxC";</note>
+      </trans-unit>
+      <trans-unit id="Kd2-mp-pUS.title" xml:space="preserve">
+        <source>Show All</source>
+        <target>Näytä kaikki</target>
+        <note>Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS";</note>
+      </trans-unit>
+      <trans-unit id="LE2-aR-0XJ.title" xml:space="preserve">
+        <source>Bring All to Front</source>
+        <target>Tuo kaikki eteen</target>
+        <note>Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ";</note>
+      </trans-unit>
+      <trans-unit id="NMo-om-nkz.title" xml:space="preserve">
+        <source>Services</source>
+        <target>Palvelut</target>
+        <note>Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz";</note>
+      </trans-unit>
+      <trans-unit id="OY7-WF-poV.title" xml:space="preserve">
+        <source>Minimize</source>
+        <target>Pienennä</target>
+        <note>Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV";</note>
+      </trans-unit>
+      <trans-unit id="Olw-nP-bQN.title" xml:space="preserve">
+        <source>Hide Music MiniPlayer</source>
+        <target>Hide Music MiniPlayer</target>
+        <note>Class = "NSMenuItem"; title = "Hide Music MiniPlayer"; ObjectID = "Olw-nP-bQN";</note>
+      </trans-unit>
+      <trans-unit id="Qr3-pr-Ha2.title" xml:space="preserve">
+        <source>Check for Updates…</source>
+        <target>Tarkista päivitykset…</target>
+        <note>Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "Qr3-pr-Ha2";</note>
+      </trans-unit>
+      <trans-unit id="Quo-Im-xHH.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Track Scrubber</source>
+        <target>Kappaleen kelaaminen</target>
+        <note>Class = "NSSlider"; ibExternalAccessibilityDescription = "Track Scrubber"; ObjectID = "Quo-Im-xHH";</note>
+      </trans-unit>
+      <trans-unit id="Quo-Im-xHH.ibShadowedToolTip" xml:space="preserve">
+        <source>Drag the knob to change the current playhead position of the Now Playing track</source>
+        <target>Vedä kahvaa kelataksesi kappaletta eteen- tai taaksepäin.</target>
+        <note>Class = "NSSlider"; ibShadowedToolTip = "Drag the knob to change the current playhead position of the Now Playing track"; ObjectID = "Quo-Im-xHH";</note>
+      </trans-unit>
+      <trans-unit id="R4o-n2-Eq4.title" xml:space="preserve">
+        <source>Zoom</source>
+        <target>Zoomaa</target>
+        <note>Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4";</note>
+      </trans-unit>
+      <trans-unit id="SJk-Am-Etv.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Max Volume</source>
+        <target>Äänenvoimakkuus täysille</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Max Volume"; ObjectID = "SJk-Am-Etv";</note>
+      </trans-unit>
+      <trans-unit id="SJk-Am-Etv.ibShadowedToolTip" xml:space="preserve">
+        <source>Set Music app's volume to max</source>
+        <target>Säädä Musiikki-sovelluksen äänenvoimakkuus täysille</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Set Music app's volume to max"; ObjectID = "SJk-Am-Etv";</note>
+      </trans-unit>
+      <trans-unit id="Td7-aD-5lo.title" xml:space="preserve">
+        <source>Window</source>
+        <target>Ikkuna</target>
+        <note>Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo";</note>
+      </trans-unit>
+      <trans-unit id="Vdr-fp-XzO.title" xml:space="preserve">
+        <source>Hide Others</source>
+        <target>Kätke muut</target>
+        <note>Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO";</note>
+      </trans-unit>
+      <trans-unit id="WX6-ru-zN3.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Previous</source>
+        <target>Edellinen</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Previous"; ObjectID = "WX6-ru-zN3";</note>
+      </trans-unit>
+      <trans-unit id="WX6-ru-zN3.ibShadowedToolTip" xml:space="preserve">
+        <source>Play previous track; hold to seek backwards</source>
+        <target>Toista edellinen kappale; kelaa taaksepäin pitämällä painettuna</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Play previous track; hold to seek backwards"; ObjectID = "WX6-ru-zN3";</note>
+      </trans-unit>
+      <trans-unit id="YBf-Yt-Edt.title" xml:space="preserve">
+        <source>00:00</source>
+        <target>00:00</target>
+        <note>Class = "NSTextFieldCell"; title = "00:00"; ObjectID = "YBf-Yt-Edt";</note>
+      </trans-unit>
+      <trans-unit id="aUF-d1-5bR.title" xml:space="preserve">
+        <source>Window</source>
+        <target>Ikkuna</target>
+        <note>Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR";</note>
+      </trans-unit>
+      <trans-unit id="bLZ-pM-lrn.title" xml:space="preserve">
+        <source>Play</source>
+        <target>Toista</target>
+        <note>Class = "NSButtonCell"; title = "Play"; ObjectID = "bLZ-pM-lrn";</note>
+      </trans-unit>
+      <trans-unit id="baQ-NY-RnQ.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Volume</source>
+        <target>Äänenvoimakkuus</target>
+        <note>Class = "NSSlider"; ibExternalAccessibilityDescription = "Volume"; ObjectID = "baQ-NY-RnQ";</note>
+      </trans-unit>
+      <trans-unit id="baQ-NY-RnQ.ibShadowedToolTip" xml:space="preserve">
+        <source>Drag or scroll to adjust the Music app's volume</source>
+        <target>Säädä Musiikki-sovelluksen äänenvoimakkuutta vetämällä tai rullaamalla</target>
+        <note>Class = "NSSlider"; ibShadowedToolTip = "Drag or scroll to adjust the Music app's volume"; ObjectID = "baQ-NY-RnQ";</note>
+      </trans-unit>
+      <trans-unit id="bib-Uj-vzu.title" xml:space="preserve">
+        <source>File</source>
+        <target>Arkisto</target>
+        <note>Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu";</note>
+      </trans-unit>
+      <trans-unit id="c8X-28-qZR.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Next</source>
+        <target>Seuraava</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Next"; ObjectID = "c8X-28-qZR";</note>
+      </trans-unit>
+      <trans-unit id="c8X-28-qZR.ibShadowedToolTip" xml:space="preserve">
+        <source>Play next track; hold to seek forward</source>
+        <target>Toista seuraava kappale; kelaa eteenpäin pitämällä painettuna</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Play next track; hold to seek forward"; ObjectID = "c8X-28-qZR";</note>
+      </trans-unit>
+      <trans-unit id="ceZ-ic-j5a.title" xml:space="preserve">
+        <source>0:00</source>
+        <target>0:00</target>
+        <note>Class = "NSTextFieldCell"; title = "0:00"; ObjectID = "ceZ-ic-j5a";</note>
+      </trans-unit>
+      <trans-unit id="dMs-cI-mzQ.title" xml:space="preserve">
+        <source>File</source>
+        <target>Arkisto</target>
+        <note>Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ";</note>
+      </trans-unit>
+      <trans-unit id="eD7-aF-fcC.ibShadowedToolTip" xml:space="preserve">
+        <source>Elapsed time</source>
+        <target>Kulunut aika</target>
+        <note>Class = "NSTextField"; ibShadowedToolTip = "Elapsed time"; ObjectID = "eD7-aF-fcC";</note>
+      </trans-unit>
+      <trans-unit id="f4O-hI-Mrd.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Repeat</source>
+        <target>Uudelleentoisto</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Repeat"; ObjectID = "f4O-hI-Mrd";</note>
+      </trans-unit>
+      <trans-unit id="f4O-hI-Mrd.ibShadowedToolTip" xml:space="preserve">
+        <source>Repeat all, one, or none</source>
+        <target>Toista uudestaan kaikki, yksi, tai ei mitään</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Repeat all, one, or none"; ObjectID = "f4O-hI-Mrd";</note>
+      </trans-unit>
+      <trans-unit id="gc3-88-etO.ibShadowedToolTip" xml:space="preserve">
+        <source>Your available playlists from Music</source>
+        <target>Käytettävissä olevat soittolistat Musiikki-sovelluksessta</target>
+        <note>Class = "NSPopUpButton"; ibShadowedToolTip = "Your available playlists from Music"; ObjectID = "gc3-88-etO";</note>
+      </trans-unit>
+      <trans-unit id="gpv-FW-e8Q.title" xml:space="preserve">
+        <source>Playlists</source>
+        <target>Soittolistat</target>
+        <note>Class = "NSTextFieldCell"; title = "Playlists"; ObjectID = "gpv-FW-e8Q";</note>
+      </trans-unit>
+      <trans-unit id="hz9-B4-Xy5.title" xml:space="preserve">
+        <source>Services</source>
+        <target>Palvelut</target>
+        <note>Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5";</note>
+      </trans-unit>
+      <trans-unit id="i6e-BW-aWp.title" xml:space="preserve">
+        <source>Previous</source>
+        <target>Edellinen</target>
+        <note>Class = "NSMenuItem"; title = "Previous"; ObjectID = "i6e-BW-aWp";</note>
+      </trans-unit>
+      <trans-unit id="iEu-47-rPY.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Zoom</source>
+        <target>Zoomaa</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Zoom"; ObjectID = "iEu-47-rPY";</note>
+      </trans-unit>
+      <trans-unit id="ib0-07-MM2.title" xml:space="preserve">
+        <source>Play/Pause</source>
+        <target>Toista/tauko</target>
+        <note>Class = "NSMenuItem"; title = "Play/Pause"; ObjectID = "ib0-07-MM2";</note>
+      </trans-unit>
+      <trans-unit id="j4B-bV-mfm.title" xml:space="preserve">
+        <source>Next</source>
+        <target>Seuraava</target>
+        <note>Class = "NSMenuItem"; title = "Next"; ObjectID = "j4B-bV-mfm";</note>
+      </trans-unit>
+      <trans-unit id="jxT-CU-nIS.title" xml:space="preserve">
+        <source>Controls</source>
+        <target>Ohjaus</target>
+        <note>Class = "NSMenuItem"; title = "Controls"; ObjectID = "jxT-CU-nIS";</note>
+      </trans-unit>
+      <trans-unit id="ohb-F3-Ff2.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Close</source>
+        <target>Sulje</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Close"; ObjectID = "ohb-F3-Ff2";</note>
+      </trans-unit>
+      <trans-unit id="p6K-yu-bUf.title" xml:space="preserve">
+        <source>Keep Above All Other Windows</source>
+        <target>Pidä muiden ikkunoiden päällä</target>
+        <note>Class = "NSMenuItem"; title = "Keep Above All Other Windows"; ObjectID = "p6K-yu-bUf";</note>
+      </trans-unit>
+      <trans-unit id="qfk-ix-RrA.ibShadowedToolTip" xml:space="preserve">
+        <source>Live audio is currently playing</source>
+        <target>Suoraa lähetystä toistetaan</target>
+        <note>Class = "NSTextField"; ibShadowedToolTip = "Live audio is currently playing"; ObjectID = "qfk-ix-RrA";</note>
+      </trans-unit>
+      <trans-unit id="s6R-sF-b8v.title" xml:space="preserve">
+        <source>Open "Music"</source>
+        <target>Avaa 'Musiikki'</target>
+        <note>Class = "NSMenuItem"; title = "Open \"Music\""; ObjectID = "s6R-sF-b8v";</note>
+      </trans-unit>
+      <trans-unit id="uQy-DD-JDr.title" xml:space="preserve">
+        <source>Music MiniPlayer</source>
+        <target>Music MiniPlayer</target>
+        <note>Class = "NSMenu"; title = "Music MiniPlayer"; ObjectID = "uQy-DD-JDr";</note>
+      </trans-unit>
+      <trans-unit id="uUL-TJ-Hln.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Snap Back</source>
+        <target>Snap Back</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Snap Back"; ObjectID = "uUL-TJ-Hln";</note>
+      </trans-unit>
+      <trans-unit id="uUL-TJ-Hln.ibShadowedToolTip" xml:space="preserve">
+        <source>Snap back to the current track &amp; playlist in Music</source>
+        <target>Näytä nykyinen soittolista ja kappale Musiikki-sovelluksessa</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Snap back to the current track &amp; playlist in Music"; ObjectID = "uUL-TJ-Hln";</note>
+      </trans-unit>
+      <trans-unit id="uhd-3H-QyJ.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Minimize</source>
+        <target>Pienennä</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Minimize"; ObjectID = "uhd-3H-QyJ";</note>
+      </trans-unit>
+      <trans-unit id="wDg-JR-1Wj.title" xml:space="preserve">
+        <source>Terms and Conditions</source>
+        <target>Käyttöehdot</target>
+        <note>Class = "NSMenuItem"; title = "Terms and Conditions"; ObjectID = "wDg-JR-1Wj";</note>
+      </trans-unit>
+      <trans-unit id="wpr-3q-Mcd.title" xml:space="preserve">
+        <source>Help</source>
+        <target>Ohje</target>
+        <note>Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd";</note>
+      </trans-unit>
+      <trans-unit id="ywr-6J-2bM.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Playback</source>
+        <target>Toista</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Playback"; ObjectID = "ywr-6J-2bM";</note>
+      </trans-unit>
+      <trans-unit id="ywr-6J-2bM.ibShadowedToolTip" xml:space="preserve">
+        <source>Play or pause the current audio</source>
+        <target>Toista tai keskeytä nykyinen ääni</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Play or pause the current audio"; ObjectID = "ywr-6J-2bM";</note>
+      </trans-unit>
+      <trans-unit id="zFg-tj-rcD.ibExternalAccessibilityDescription" xml:space="preserve">
+        <source>Play</source>
+        <target>Toista</target>
+        <note>Class = "NSButton"; ibExternalAccessibilityDescription = "Play"; ObjectID = "zFg-tj-rcD";</note>
+      </trans-unit>
+      <trans-unit id="zFg-tj-rcD.ibShadowedToolTip" xml:space="preserve">
+        <source>Begin playing the selected playlist</source>
+        <target>Toista valittua soittolistaa</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Begin playing the selected playlist"; ObjectID = "zFg-tj-rcD";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Music MiniPlayer/Preferences/Base.lproj/AppPreferences.storyboard" source-language="en" target-language="fi" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="3RT-9N-wIm.title" xml:space="preserve">
+        <source>App Updates:</source>
+        <target>Ohjelman päivitykset:</target>
+        <note>Class = "NSTextFieldCell"; title = "App Updates:"; ObjectID = "3RT-9N-wIm";</note>
+      </trans-unit>
+      <trans-unit id="5Yf-lh-brO.ibShadowedToolTip" xml:space="preserve">
+        <source>Keeps Music MiniPlayer always visible by keeping above all other app windows</source>
+        <target>Pitää Music MiniPlayerin aina näkyvillä muiden ikkunoiden päällä</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Keeps Music MiniPlayer always visible by keeping above all other app windows"; ObjectID = "5Yf-lh-brO";</note>
+      </trans-unit>
+      <trans-unit id="9Ps-gN-xEU.title" xml:space="preserve">
+        <source>Window:</source>
+        <target>Ikkuna:</target>
+        <note>Class = "NSTextFieldCell"; title = "Window:"; ObjectID = "9Ps-gN-xEU";</note>
+      </trans-unit>
+      <trans-unit id="91y-ef-HnU.ibShadowedToolTip" xml:space="preserve">
+        <source>Displays the total duration of the track</source>
+        <target>Näyttää kappaleen kokonaiskeston</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Displays the total duration of the track"; ObjectID = "91y-ef-HnU";</note>
+      </trans-unit>
+      <trans-unit id="AO8-fs-1Zg.ibShadowedToolTip" xml:space="preserve">
+        <source>Displays the time remaining for the track to end</source>
+        <target>Näyttää, kuinka kauan kappaletta on jäljellä</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Displays the time remaining for the track to end"; ObjectID = "AO8-fs-1Zg";</note>
+      </trans-unit>
+      <trans-unit id="Gt0-gT-uSx.title" xml:space="preserve">
+        <source>Remaining time</source>
+        <target>Jäljellä oleva aika</target>
+        <note>Class = "NSButtonCell"; title = "Remaining time"; ObjectID = "Gt0-gT-uSx";</note>
+      </trans-unit>
+      <trans-unit id="J4k-hG-qgP.title" xml:space="preserve">
+        <source>Time Label:</source>
+        <target>Aikanäyttö:</target>
+        <note>Class = "NSTextFieldCell"; title = "Time Label:"; ObjectID = "J4k-hG-qgP";</note>
+      </trans-unit>
+      <trans-unit id="Mxl-Vc-u2u.title" xml:space="preserve">
+        <source>[Date]</source>
+        <target>[Päivämäärä]</target>
+        <note>Class = "NSTextFieldCell"; title = "[Date]"; ObjectID = "Mxl-Vc-u2u";</note>
+      </trans-unit>
+      <trans-unit id="Tb7-kg-ZHP.title" xml:space="preserve">
+        <source>Hourly</source>
+        <target>Tunneittain</target>
+        <note>Class = "NSMenuItem"; title = "Hourly"; ObjectID = "Tb7-kg-ZHP";</note>
+      </trans-unit>
+      <trans-unit id="U1J-jw-Spa.title" xml:space="preserve">
+        <source>Updates</source>
+        <target>Päivitykset</target>
+        <note>Class = "NSViewController"; title = "Updates"; ObjectID = "U1J-jw-Spa";</note>
+      </trans-unit>
+      <trans-unit id="UGd-Xj-x6T.title" xml:space="preserve">
+        <source>Keep Above All Other Windows</source>
+        <target>Pidä muiden ikkunoiden päällä</target>
+        <note>Class = "NSButtonCell"; title = "Keep Above All Other Windows"; ObjectID = "UGd-Xj-x6T";</note>
+      </trans-unit>
+      <trans-unit id="WE6-qw-PH5.title" xml:space="preserve">
+        <source>Monthly</source>
+        <target>Kuukausittain</target>
+        <note>Class = "NSMenuItem"; title = "Monthly"; ObjectID = "WE6-qw-PH5";</note>
+      </trans-unit>
+      <trans-unit id="Zf0-JL-dv5.title" xml:space="preserve">
+        <source>Display the remaining time or duration of the current track in the LCD display.</source>
+        <target>Näyttää kappaleen jäljellä olevan ajan tai kokonaiskeston LCD-näytössä.</target>
+        <note>Class = "NSTextFieldCell"; title = "Display the remaining time or duration of the current track in the LCD display."; ObjectID = "Zf0-JL-dv5";</note>
+      </trans-unit>
+      <trans-unit id="ZrU-wT-NJK.title" xml:space="preserve">
+        <source>This option is also available in the Window menu in the app's menu bar.</source>
+        <target>Tämä valinta on käytettävissä myös Ikkuna-valikossa.</target>
+        <note>Class = "NSTextFieldCell"; title = "This option is also available in the Window menu in the app's menu bar."; ObjectID = "ZrU-wT-NJK";</note>
+      </trans-unit>
+      <trans-unit id="bWq-at-TWg.title" xml:space="preserve">
+        <source>Automatically Downloads Updates</source>
+        <target>Lataa päivitykset automaattisesti</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Downloads Updates"; ObjectID = "bWq-at-TWg";</note>
+      </trans-unit>
+      <trans-unit id="clz-ky-mxP.title" xml:space="preserve">
+        <source>Frequency:</source>
+        <target>Tarkistusväli:</target>
+        <note>Class = "NSTextFieldCell"; title = "Frequency:"; ObjectID = "clz-ky-mxP";</note>
+      </trans-unit>
+      <trans-unit id="cvL-ps-daB.title" xml:space="preserve">
+        <source>Weekly</source>
+        <target>Viikoittain</target>
+        <note>Class = "NSMenuItem"; title = "Weekly"; ObjectID = "cvL-ps-daB";</note>
+      </trans-unit>
+      <trans-unit id="hJp-JV-cAP.title" xml:space="preserve">
+        <source>Preferences</source>
+        <target>Asetukset</target>
+        <note>Class = "NSWindow"; title = "Preferences"; ObjectID = "hJp-JV-cAP";</note>
+      </trans-unit>
+      <trans-unit id="hfA-h1-trm.title" xml:space="preserve">
+        <source>Last Checked</source>
+        <target>Tarkistettu viimeksi</target>
+        <note>Class = "NSTextFieldCell"; title = "Last Checked"; ObjectID = "hfA-h1-trm";</note>
+      </trans-unit>
+      <trans-unit id="i3P-ZJ-yzP.title" xml:space="preserve">
+        <source>General</source>
+        <target>Yleiset</target>
+        <note>Class = "NSViewController"; title = "General"; ObjectID = "i3P-ZJ-yzP";</note>
+      </trans-unit>
+      <trans-unit id="jY1-E5-teb.title" xml:space="preserve">
+        <source>Automatically Check for Updates</source>
+        <target>Tarkista päivitykset automaattisesti</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "jY1-E5-teb";</note>
+      </trans-unit>
+      <trans-unit id="mVI-5e-4Kz.title" xml:space="preserve">
+        <source> Check for Updates </source>
+        <target> Tarkista päivitykset </target>
+        <note>Class = "NSButtonCell"; title = " Check for Updates "; ObjectID = "mVI-5e-4Kz";</note>
+      </trans-unit>
+      <trans-unit id="qPV-nR-3CN.title" xml:space="preserve">
+        <source>Duration</source>
+        <target>Kokonaiskesto</target>
+        <note>Class = "NSButtonCell"; title = "Duration"; ObjectID = "qPV-nR-3CN";</note>
+      </trans-unit>
+      <trans-unit id="tg8-uG-BrF.title" xml:space="preserve">
+        <source>Daily</source>
+        <target>Päivittäin</target>
+        <note>Class = "NSMenuItem"; title = "Daily"; ObjectID = "tg8-uG-BrF";</note>
+      </trans-unit>
+      <trans-unit id="xTU-I5-lwH.title" xml:space="preserve">
+        <source>Interface</source>
+        <target>Käyttöliittymä</target>
+        <note>Class = "NSViewController"; title = "Interface"; ObjectID = "xTU-I5-lwH";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
