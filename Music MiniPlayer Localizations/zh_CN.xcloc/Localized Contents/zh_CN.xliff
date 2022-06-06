@@ -215,7 +215,7 @@
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
         <source>Copyright © 2022 Mario A Guzman
 All rights reserved.</source>
-        <target>版权所有 © 2022 Mario A Guzman
+        <target>Copyright © 2022 Mario A Guzman
 保留一切权利.</target>
         <note>Copyright (human-readable)</note>
       </trans-unit>
