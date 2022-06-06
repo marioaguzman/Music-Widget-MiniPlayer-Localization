@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Music MiniPlayer" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Music MiniPlayer" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Music MiniPlayer" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="YJz-Uw-HH1"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <action selector="preferencesButtonAction:" target="Ady-hI-5gd" id="92g-5w-6gH"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Check for Updates…" id="Qr3-pr-Ha2">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="4z2-Gy-fFi" id="hAu-Gm-Fe6"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Music MiniPlayer" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit Music MiniPlayer" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="File" id="dMs-cI-mzQ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="File" id="bib-Uj-vzu">
+                                    <items>
+                                        <menuItem title="Open &quot;Music&quot;" keyEquivalent="s" identifier="File_OpenMusicApp" id="s6R-sF-b8v">
+                                            <connections>
+                                                <action selector="openMusicApp:" target="Ady-hI-5gd" id="2AJ-8L-xXQ"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="npO-Yh-OfE"/>
+                                        <menuItem title="Close" keyEquivalent="w" identifier="File_CloseWindow" id="BLC-LX-O2Y">
+                                            <connections>
+                                                <action selector="closeWindow:" target="Ady-hI-5gd" id="QO0-A4-cXO"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Controls" id="jxT-CU-nIS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Controls" id="GEO-Iw-cKr">
+                                    <items>
+                                        <menuItem title="Play/Pause" keyEquivalent=" " identifier="Controls_PlayPause" id="ib0-07-MM2">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="playPausePressed:" target="Ady-hI-5gd" id="Mcd-Yt-WNL"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="xoz-j0-kcp"/>
+                                        <menuItem title="Next" keyEquivalent="" identifier="Controls_Next" id="j4B-bV-mfm">
+                                            <connections>
+                                                <action selector="nextPressed:" target="Ady-hI-5gd" id="18T-yZ-8ct"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Previous" keyEquivalent="" identifier="Controls_Prev" id="i6e-BW-aWp">
+                                            <connections>
+                                                <action selector="prevPressed:" target="Ady-hI-5gd" id="sXQ-kB-h70"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="Vow-s4-lKs"/>
+                                        <menuItem title="Volume Up" keyEquivalent="" identifier="Controls_VolUp" id="2cu-2G-bdz">
+                                            <connections>
+                                                <action selector="volumeButtonPressed:" target="Ady-hI-5gd" id="8y9-SM-JKW"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Volume Down" keyEquivalent="" identifier="Controls_VolDown" id="8XE-lj-Wco">
+                                            <connections>
+                                                <action selector="volumeButtonPressed:" target="Ady-hI-5gd" id="D09-gb-nju"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                    <items>
+                                        <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                            <connections>
+                                                <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                                        <menuItem title="Keep Above All Other Windows" identifier="Window_KeepAboveAllWindows" id="p6K-yu-bUf">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleKeepMainWindowAboveAllOtherWindows:" target="Ady-hI-5gd" id="Wyf-F9-u5V"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="Music MiniPlayer Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="yvm-Eh-jfK"/>
+                                        <menuItem title="Terms and Conditions" identifier="Help_OpenTermsConditions" id="wDg-JR-1Wj">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openTermsAndConditions:" target="Ady-hI-5gd" id="tJy-fn-ZbS"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Music_MiniPlayer" customModuleProvider="target">
+                    <connections>
+                        <outlet property="minimizeMenuItem" destination="OY7-WF-poV" id="SoM-mU-aJ5"/>
+                        <outlet property="playPauseMenuItem" destination="ib0-07-MM2" id="vsP-LQ-eFy"/>
+                        <outlet property="updater" destination="4z2-Gy-fFi" id="NG6-Pa-WCZ"/>
+                        <outlet property="zoomMenuItem" destination="R4o-n2-Eq4" id="bmd-6c-Uiq"/>
+                    </connections>
+                </customObject>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="4z2-Gy-fFi" customClass="SPUStandardUpdaterController"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="66"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Music_MiniPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" separatorStyle="none" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="MusicMiniPlayer" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA" customClass="Window" customModule="Music_MiniPlayer" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <rect key="contentRect" x="211" y="700" width="450" height="64"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="350" height="64"/>
+                        <value key="maxSize" type="size" width="550" height="64"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="268"/>
+        </scene>
+        <!--Playlist View Controller-->
+        <scene sceneID="DMl-IF-T2e">
+            <objects>
+                <viewController showSeguePresentationStyle="single" id="VwU-1U-K6A" customClass="PlaylistViewController" customModule="Music_MiniPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="8hP-wq-8RQ">
+                        <rect key="frame" x="0.0" y="0.0" width="468" height="66"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView horizontalHuggingPriority="248" verticalHuggingPriority="600" horizontalCompressionResistancePriority="248" xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8Hs-eA-J18">
+                                <rect key="frame" x="100" y="16" width="269" height="35"/>
+                                <constraints>
+                                    <constraint firstItem="zFg-tj-rcD" firstAttribute="firstBaseline" secondItem="gc3-88-etO" secondAttribute="firstBaseline" id="NQ6-nZ-uoV"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="pqD-eq-eX6"/>
+                                    <gridRow id="Bd9-7k-2zR"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn trailingPadding="1" id="XtW-42-vf8"/>
+                                    <gridColumn trailingPadding="16" id="T26-50-daz"/>
+                                    <gridColumn width="140" id="umQ-O7-XjP"/>
+                                    <gridColumn id="pOE-ic-qxd"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="pqD-eq-eX6" column="XtW-42-vf8" id="X36-AF-Kzi"/>
+                                    <gridCell row="pqD-eq-eX6" column="T26-50-daz" id="40N-wr-tsY"/>
+                                    <gridCell row="pqD-eq-eX6" column="umQ-O7-XjP" id="DS8-Ho-5of">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3wF-lS-d8V">
+                                            <rect key="frame" x="83" y="21" width="48" height="14"/>
+                                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Playlists" id="gpv-FW-e8Q">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="pqD-eq-eX6" column="pOE-ic-qxd" id="D8M-f1-YSW"/>
+                                    <gridCell row="Bd9-7k-2zR" column="XtW-42-vf8" id="oDs-op-Csc">
+                                        <button key="contentView" identifier="Shuffle" toolTip="Set shuffle on or off" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BxZ-Bi-91G" customClass="MetalGlyphButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="-6" y="-7" width="40" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="EE9-Cp-vQO"/>
+                                                <constraint firstAttribute="width" constant="28" id="Tja-Lm-GDo"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="only" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hA2-zv-rdr">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <imageReference key="image" image="shuffle_off" symbolScale="medium" renderingMode="template"/>
+                                            </buttonCell>
+                                            <accessibility description="Shuffle"/>
+                                            <connections>
+                                                <action selector="shuffleButtonPressed:" target="VwU-1U-K6A" id="0sX-4W-6bA"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Bd9-7k-2zR" column="T26-50-daz" id="djQ-nA-WZi">
+                                        <button key="contentView" identifier="Repeat" toolTip="Repeat all, one, or none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f4O-hI-Mrd" customClass="MetalGlyphButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="29" y="-7" width="40" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="28" id="7gm-wd-Nn1"/>
+                                                <constraint firstAttribute="height" constant="15" id="T49-9o-6I4"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="only" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RBo-Q9-kif">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <imageReference key="image" image="repeat_off" symbolScale="medium" renderingMode="template"/>
+                                            </buttonCell>
+                                            <accessibility description="Repeat"/>
+                                            <connections>
+                                                <action selector="repeatButtonPressed:" target="VwU-1U-K6A" id="yW3-cB-6MB"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Bd9-7k-2zR" column="umQ-O7-XjP" xPlacement="fill" id="EDL-lo-gF6">
+                                        <popUpButton key="contentView" toolTip="Your available playlists from Music" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gc3-88-etO" customClass="MetalPopupButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="81" y="-4" width="148" height="22"/>
+                                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="dpN-p6-CGD" customClass="MetalPopupButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <menu key="menu" id="nvG-rV-TMc"/>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="VwU-1U-K6A" name="enabled" keyPath="musicConnector.isMusicAppRunning" id="rSP-qN-vKc"/>
+                                                <binding destination="VwU-1U-K6A" name="content" keyPath="musicConnector.playlistOptions" id="JOS-vB-tlj"/>
+                                                <binding destination="VwU-1U-K6A" name="contentValues" keyPath="musicConnector.playlistOptions.name" previousBinding="JOS-vB-tlj" id="cMw-Yy-VW1"/>
+                                                <binding destination="VwU-1U-K6A" name="selectedObject" keyPath="musicConnector.selectedPlaylist" previousBinding="cMw-Yy-VW1" id="znR-eu-SHb"/>
+                                            </connections>
+                                        </popUpButton>
+                                    </gridCell>
+                                    <gridCell row="Bd9-7k-2zR" column="pOE-ic-qxd" id="oNb-DT-4LJ">
+                                        <button key="contentView" identifier="Play" toolTip="Begin playing the selected playlist" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zFg-tj-rcD" customClass="MetalButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="225" y="-7" width="50" height="26"/>
+                                            <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bLZ-pM-lrn" customClass="MetalButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <accessibility description="Play"/>
+                                            <connections>
+                                                <action selector="doneButtonClicked:" target="VwU-1U-K6A" id="1nT-aY-Alk"/>
+                                                <binding destination="VwU-1U-K6A" name="enabled" keyPath="musicConnector.isMusicAppRunning" id="xiJ-kn-Erc"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8Hs-eA-J18" firstAttribute="centerX" secondItem="8hP-wq-8RQ" secondAttribute="centerX" id="IPe-W6-9hx"/>
+                            <constraint firstItem="8Hs-eA-J18" firstAttribute="centerY" secondItem="8hP-wq-8RQ" secondAttribute="centerY" id="Skv-mo-6Nr"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Hs-eA-J18" secondAttribute="bottom" constant="8" id="TOm-7M-f0G"/>
+                            <constraint firstItem="8Hs-eA-J18" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8hP-wq-8RQ" secondAttribute="leading" constant="12" id="aiI-2e-KfC"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Hs-eA-J18" secondAttribute="trailing" constant="12" id="dvl-hm-Mxo"/>
+                            <constraint firstItem="8Hs-eA-J18" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8hP-wq-8RQ" secondAttribute="top" constant="8" id="luM-Ak-gOc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="zFg-tj-rcD" id="doO-jQ-K84"/>
+                        <outlet property="playlistLabel" destination="3wF-lS-d8V" id="H0D-qE-nMm"/>
+                        <outlet property="playlistPicker" destination="gc3-88-etO" id="ZzD-d2-Csp"/>
+                        <outlet property="repeatButton" destination="f4O-hI-Mrd" id="RAF-6M-5mz"/>
+                        <outlet property="shuffleButton" destination="BxZ-Bi-91G" id="wxY-kn-OMf"/>
+                    </connections>
+                </viewController>
+                <customObject id="wr3-VV-ZM6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="884"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Music_MiniPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="473" height="64"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="StW-Ln-CCd" customClass="DrawerBackground" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="0.0" width="433" height="64"/>
+                                <subviews>
+                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-bK-0m5">
+                                        <rect key="frame" x="6" y="6" width="421" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="xgR-6f-mzE"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="VwU-1U-K6A" kind="embed" identifier="PlaylistSegue" id="GHm-Kd-YIw"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="8QZ-7f-GbE"/>
+                                    <constraint firstItem="Rrs-bK-0m5" firstAttribute="leading" secondItem="StW-Ln-CCd" secondAttribute="leading" constant="6" id="Xtc-rh-hO3"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rrs-bK-0m5" secondAttribute="bottom" constant="6" id="ofc-MT-8sS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rrs-bK-0m5" secondAttribute="trailing" constant="6" id="xKd-1k-9ov"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6SF-fH-qPH" customClass="ShadowView" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="-15" width="433" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="mSz-hX-g55"/>
+                                </constraints>
+                            </customView>
+                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWn-QI-VWs" customClass="WindowBackground" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="473" height="64"/>
+                                <subviews>
+                                    <button identifier="Previous" toolTip="Play previous track; hold to seek backwards" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WX6-ru-zN3" customClass="MiniPlayerPlayerButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="26" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="7gy-s8-Dy2"/>
+                                            <constraint firstAttribute="height" constant="23" id="rmp-YL-HMR"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FNv-sO-KjI" customClass="MiniPlayerPlayerButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <accessibility description="Previous"/>
+                                        <connections>
+                                            <action selector="prevPressed:" target="rPt-NT-nkU" id="vQA-fE-M90"/>
+                                        </connections>
+                                    </button>
+                                    <button identifier="Playback" toolTip="Play or pause the current audio" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ywr-6J-2bM" customClass="PlayerButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="21" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="7oX-vg-Fj2"/>
+                                            <constraint firstAttribute="width" constant="35" id="Qst-cp-ENU"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="afY-va-z7T" customClass="PlayerButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <accessibility description="Playback"/>
+                                        <connections>
+                                            <action selector="playPausePressed:" target="rPt-NT-nkU" id="7sn-bO-VnK"/>
+                                        </connections>
+                                    </button>
+                                    <button identifier="Next" toolTip="Play next track; hold to seek forward" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-28-qZR" customClass="MiniPlayerPlayerButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="93" y="26" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="VqQ-ht-1RU"/>
+                                            <constraint firstAttribute="height" constant="23" id="tuk-fR-wtF"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MCi-ux-qXJ" customClass="MiniPlayerPlayerButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <accessibility description="Next"/>
+                                        <connections>
+                                            <action selector="nextPressed:" target="rPt-NT-nkU" id="WAl-nX-ONh"/>
+                                        </connections>
+                                    </button>
+                                    <button identifier="MuteVolume" toolTip="Mute the Music app's volume" translatesAutoresizingMaskIntoConstraints="NO" id="HHN-x8-oxC">
+                                        <rect key="frame" x="28" y="6" width="12" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="7yH-iJ-cs6"/>
+                                            <constraint firstAttribute="width" constant="12" id="Fqs-Hd-SdY"/>
+                                        </constraints>
+                                        <shadow key="shadow">
+                                            <size key="offset" width="0.0" height="1"/>
+                                            <color key="color" red="0.99999600649999998" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </shadow>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="speaker_lo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="suz-v0-bAy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <accessibility description="Mute Volume"/>
+                                        <connections>
+                                            <action selector="volMinMaxSet:" target="XfG-lQ-9wD" id="p7I-Jq-OgB"/>
+                                        </connections>
+                                    </button>
+                                    <slider identifier="Volume" toolTip="Drag or scroll to adjust the Music app's volume" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="baQ-NY-RnQ" customClass="VolumeSlider" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="38" y="3" width="68" height="17"/>
+                                        <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="WRA-gu-3zi" customClass="VolumeSliderCell" customModule="Music_MiniPlayer" customModuleProvider="target"/>
+                                        <accessibility description="Volume"/>
+                                        <connections>
+                                            <action selector="volumeSliderAdjusted:" target="XfG-lQ-9wD" id="Opj-64-Von"/>
+                                        </connections>
+                                    </slider>
+                                    <button identifier="MaxVolume" toolTip="Set Music app's volume to max" translatesAutoresizingMaskIntoConstraints="NO" id="SJk-Am-Etv">
+                                        <rect key="frame" x="104" y="6" width="17" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="Jpc-Wz-btB"/>
+                                            <constraint firstAttribute="width" constant="17" id="Lgc-UL-vLD"/>
+                                        </constraints>
+                                        <shadow key="shadow">
+                                            <size key="offset" width="0.0" height="1"/>
+                                            <color key="color" red="0.99999600649999998" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </shadow>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="speaker_hi" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="u3P-zn-ysr">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <accessibility description="Max Volume"/>
+                                        <connections>
+                                            <action selector="volMinMaxSet:" target="XfG-lQ-9wD" id="g55-TI-eqw"/>
+                                        </connections>
+                                    </button>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="3lF-7Z-EZY" customClass="LCDBackgroundView" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="127" y="10" width="337" height="44"/>
+                                        <subviews>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="0p6-iq-Cub">
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="22"/>
+                                                <subviews>
+                                                    <textField toolTip="Elapsed time" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eD7-aF-fcC">
+                                                        <rect key="frame" x="4" y="4" width="49" height="11"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="hFt-9X-p4a"/>
+                                                        </constraints>
+                                                        <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" alignment="right" title="0:00" id="ceZ-ic-j5a">
+                                                            <font key="font" metaFont="miniSystem"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField toolTip="Elapsed time" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-QC-pDw">
+                                                        <rect key="frame" x="284" y="4" width="49" height="11"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="hLa-xh-leW"/>
+                                                        </constraints>
+                                                        <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" alignment="left" title="00:00" id="YBf-Yt-Edt">
+                                                            <font key="font" metaFont="miniSystem"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <slider toolTip="Drag the knob to change the current playhead position of the Now Playing track" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Quo-Im-xHH" customClass="ClassicAudioProgressSlider" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                        <rect key="frame" x="51" y="1" width="235" height="17"/>
+                                                        <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="PmA-0P-rw7" customClass="ClassicAudioProgressSliderCell" customModule="Music_MiniPlayer" customModuleProvider="target"/>
+                                                        <accessibility description="Track Scrubber"/>
+                                                        <connections>
+                                                            <action selector="trackingDidChange:" target="XfG-lQ-9wD" id="S7T-nc-NeE"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <textField toolTip="Live audio is currently playing" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-ix-RrA">
+                                                        <rect key="frame" x="156" y="4" width="26" height="13"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="LIVE" id="DiE-yb-1qh">
+                                                            <font key="font" size="10" name="LucidaGrande"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Brn-QC-pDw" secondAttribute="trailing" constant="6" id="CuC-3t-wNJ"/>
+                                                    <constraint firstItem="Brn-QC-pDw" firstAttribute="leading" secondItem="Quo-Im-xHH" secondAttribute="trailing" constant="2" id="GYb-lz-vnE"/>
+                                                    <constraint firstItem="qfk-ix-RrA" firstAttribute="centerX" secondItem="0p6-iq-Cub" secondAttribute="centerX" id="Pr4-fW-Eeq"/>
+                                                    <constraint firstAttribute="height" constant="22" id="SbJ-Ld-POp"/>
+                                                    <constraint firstItem="eD7-aF-fcC" firstAttribute="leading" secondItem="0p6-iq-Cub" secondAttribute="leading" constant="6" id="Se4-Xu-iMc"/>
+                                                    <constraint firstItem="eD7-aF-fcC" firstAttribute="centerY" secondItem="Quo-Im-xHH" secondAttribute="centerY" constant="-0.5" id="i0h-I9-1Sf"/>
+                                                    <constraint firstItem="Quo-Im-xHH" firstAttribute="centerY" secondItem="0p6-iq-Cub" secondAttribute="centerY" constant="2" id="iDo-GI-CSL"/>
+                                                    <constraint firstItem="Quo-Im-xHH" firstAttribute="leading" secondItem="eD7-aF-fcC" secondAttribute="trailing" constant="2" id="lnB-hB-ABt"/>
+                                                    <constraint firstItem="qfk-ix-RrA" firstAttribute="centerY" secondItem="0p6-iq-Cub" secondAttribute="centerY" constant="1" id="nfW-xZ-IyN"/>
+                                                    <constraint firstItem="Brn-QC-pDw" firstAttribute="centerY" secondItem="Quo-Im-xHH" secondAttribute="centerY" constant="-0.5" id="tNe-bC-NDG"/>
+                                                </constraints>
+                                            </customView>
+                                            <button identifier="Drawer" toolTip="Hide or show the drawer" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DZ8-Co-jYJ" customClass="AuxiliaryButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="17" width="11" height="11"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="9" id="pdw-fm-4Lw"/>
+                                                    <constraint firstAttribute="width" constant="11" id="yNI-7d-BPF"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3Ss-Zq-q8g">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="miniSystem"/>
+                                                </buttonCell>
+                                                <accessibility description="Drawer"/>
+                                                <connections>
+                                                    <action selector="toggleDrawer:" target="rPt-NT-nkU" id="5Br-N8-STA"/>
+                                                </connections>
+                                            </button>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="dRt-GI-k4p" customClass="TrackInfoView" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <rect key="frame" x="28" y="14" width="280" height="26"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bUh-We-u5u" customClass="ScrollingMarqueeView" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="12" width="280" height="14"/>
+                                                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" id="nid-f1-CBK">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Akt-FY-vNX" customClass="ScrollingMarqueeView" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="14"/>
+                                                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" id="RY7-D2-15s">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="bUh-We-u5u" secondAttribute="trailing" constant="2" id="1DD-ab-1qw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Akt-FY-vNX" secondAttribute="bottom" id="B5X-9O-Koa"/>
+                                                    <constraint firstItem="Akt-FY-vNX" firstAttribute="leading" secondItem="dRt-GI-k4p" secondAttribute="leading" constant="2" id="CU0-yL-16X"/>
+                                                    <constraint firstItem="Akt-FY-vNX" firstAttribute="top" secondItem="bUh-We-u5u" secondAttribute="bottom" constant="-2" id="Hpn-Te-55O"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Akt-FY-vNX" secondAttribute="trailing" constant="2" id="S9N-na-pAc"/>
+                                                    <constraint firstItem="bUh-We-u5u" firstAttribute="top" secondItem="dRt-GI-k4p" secondAttribute="top" id="c1p-yb-lin"/>
+                                                    <constraint firstItem="bUh-We-u5u" firstAttribute="leading" secondItem="dRt-GI-k4p" secondAttribute="leading" constant="2" id="kaS-Gg-oAU"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="primaryLabel" destination="bUh-We-u5u" id="MWy-PU-Z7c"/>
+                                                    <outlet property="secondaryLabel" destination="Akt-FY-vNX" id="2CN-bC-jGq"/>
+                                                </connections>
+                                            </customView>
+                                            <button identifier="SnapBack" toolTip="Snap back to the current track &amp; playlist in Music" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uUL-TJ-Hln" customClass="AuxiliaryButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="17" width="11" height="11"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="9" id="aKi-Bo-bGd"/>
+                                                    <constraint firstAttribute="width" constant="11" id="ovx-Mw-yXb"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="snapback" imagePosition="overlaps" alignment="center" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="93X-Dm-XqI">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="miniSystem"/>
+                                                </buttonCell>
+                                                <accessibility description="Snap Back"/>
+                                                <connections>
+                                                    <action selector="snapBack:" target="rPt-NT-nkU" id="JAb-OY-OvJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0p6-iq-Cub" secondAttribute="trailing" id="1Qq-2b-FyG"/>
+                                            <constraint firstAttribute="bottom" secondItem="0p6-iq-Cub" secondAttribute="bottom" id="7mB-4w-mAo"/>
+                                            <constraint firstAttribute="height" constant="44" id="DRB-Cn-61n"/>
+                                            <constraint firstItem="dRt-GI-k4p" firstAttribute="top" secondItem="3lF-7Z-EZY" secondAttribute="top" constant="4" id="G6l-pI-UdI"/>
+                                            <constraint firstItem="DZ8-Co-jYJ" firstAttribute="centerY" secondItem="3lF-7Z-EZY" secondAttribute="centerY" id="NQk-FU-vKd"/>
+                                            <constraint firstItem="0p6-iq-Cub" firstAttribute="leading" secondItem="3lF-7Z-EZY" secondAttribute="leading" id="OBy-nm-h4o"/>
+                                            <constraint firstItem="DZ8-Co-jYJ" firstAttribute="leading" secondItem="3lF-7Z-EZY" secondAttribute="leading" constant="8" id="OT1-Xa-H6X"/>
+                                            <constraint firstItem="uUL-TJ-Hln" firstAttribute="centerY" secondItem="3lF-7Z-EZY" secondAttribute="centerY" id="Rir-CO-FRt"/>
+                                            <constraint firstItem="dRt-GI-k4p" firstAttribute="leading" secondItem="3lF-7Z-EZY" secondAttribute="leading" constant="28" id="grf-K2-qBD"/>
+                                            <constraint firstAttribute="trailing" secondItem="dRt-GI-k4p" secondAttribute="trailing" constant="29" id="q7n-J9-8Yc"/>
+                                            <constraint firstAttribute="trailing" secondItem="uUL-TJ-Hln" secondAttribute="trailing" constant="8" id="uMg-ip-QtY"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-eJ-3oX" customClass="WindowButtonsView" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="7" width="16" height="50"/>
+                                        <subviews>
+                                            <button identifier="Close" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ohb-F3-Ff2" customClass="WindowControlButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="36" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="BNL-Y3-a2p"/>
+                                                    <constraint firstAttribute="width" constant="14" id="ueV-wJ-afz"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="amx-9S-ak9" customClass="WindowControlButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <accessibility description="Close"/>
+                                            </button>
+                                            <button identifier="Minimize" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-3H-QyJ" customClass="WindowControlButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="18" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="14" id="chw-B4-whA"/>
+                                                    <constraint firstAttribute="height" constant="12" id="gVM-Vp-SLF"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="udM-uB-NwE" customClass="WindowControlButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <accessibility description="Minimize"/>
+                                            </button>
+                                            <button identifier="Zoom" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-47-rPY" customClass="WindowControlButton" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="0.0" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="QTm-CJ-Ld7"/>
+                                                    <constraint firstAttribute="width" constant="14" id="ayR-fA-8HS"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Vd-Ad-a3Z" customClass="WindowControlButtonCell" customModule="Music_MiniPlayer" customModuleProvider="target">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <accessibility description="Zoom"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ohb-F3-Ff2" secondAttribute="trailing" constant="1" id="0s0-XO-aaK"/>
+                                            <constraint firstAttribute="trailing" secondItem="iEu-47-rPY" secondAttribute="trailing" constant="1" id="36e-8i-WNb"/>
+                                            <constraint firstItem="iEu-47-rPY" firstAttribute="leading" secondItem="Tdt-eJ-3oX" secondAttribute="leading" constant="1" id="8yk-CU-pYW"/>
+                                            <constraint firstItem="uhd-3H-QyJ" firstAttribute="leading" secondItem="Tdt-eJ-3oX" secondAttribute="leading" constant="1" id="Ar4-Kx-Hhl"/>
+                                            <constraint firstAttribute="trailing" secondItem="uhd-3H-QyJ" secondAttribute="trailing" constant="1" id="GU0-hN-t4h"/>
+                                            <constraint firstItem="ohb-F3-Ff2" firstAttribute="leading" secondItem="Tdt-eJ-3oX" secondAttribute="leading" constant="1" id="PQx-NE-gWK"/>
+                                            <constraint firstItem="iEu-47-rPY" firstAttribute="top" secondItem="uhd-3H-QyJ" secondAttribute="bottom" constant="6" id="ZeA-bU-kAE"/>
+                                            <constraint firstItem="ohb-F3-Ff2" firstAttribute="top" secondItem="Tdt-eJ-3oX" secondAttribute="top" constant="1" id="cvG-VV-8lD"/>
+                                            <constraint firstAttribute="bottom" secondItem="iEu-47-rPY" secondAttribute="bottom" constant="1" id="d2v-sr-lAI"/>
+                                            <constraint firstItem="iEu-47-rPY" firstAttribute="top" secondItem="uhd-3H-QyJ" secondAttribute="bottom" constant="6" id="exk-bX-xea"/>
+                                            <constraint firstItem="uhd-3H-QyJ" firstAttribute="top" secondItem="ohb-F3-Ff2" secondAttribute="bottom" constant="6" id="rD3-Qd-9zx"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HHN-x8-oxC" firstAttribute="centerY" secondItem="baQ-NY-RnQ" secondAttribute="centerY" id="0xV-ut-rby"/>
+                                    <constraint firstItem="Tdt-eJ-3oX" firstAttribute="leading" secondItem="bWn-QI-VWs" secondAttribute="leading" constant="6" id="3ba-hr-9wv"/>
+                                    <constraint firstAttribute="height" constant="64" id="8Bd-Rx-wFf"/>
+                                    <constraint firstItem="WX6-ru-zN3" firstAttribute="leading" secondItem="Tdt-eJ-3oX" secondAttribute="trailing" constant="7" id="8fN-Wb-sVE"/>
+                                    <constraint firstAttribute="bottom" secondItem="3lF-7Z-EZY" secondAttribute="bottom" constant="10" id="CWT-G7-W8E"/>
+                                    <constraint firstItem="3lF-7Z-EZY" firstAttribute="leading" secondItem="c8X-28-qZR" secondAttribute="trailing" constant="9" id="Fvw-dr-3gA"/>
+                                    <constraint firstItem="3lF-7Z-EZY" firstAttribute="top" secondItem="bWn-QI-VWs" secondAttribute="top" constant="10" id="Gex-pC-Qtw"/>
+                                    <constraint firstItem="baQ-NY-RnQ" firstAttribute="leading" secondItem="WX6-ru-zN3" secondAttribute="leading" constant="11" id="Iwp-va-D61"/>
+                                    <constraint firstItem="ywr-6J-2bM" firstAttribute="leading" secondItem="WX6-ru-zN3" secondAttribute="trailing" constant="2" id="KCX-WT-Dhx"/>
+                                    <constraint firstItem="Tdt-eJ-3oX" firstAttribute="top" secondItem="bWn-QI-VWs" secondAttribute="top" constant="7" id="LWz-Hr-FFR"/>
+                                    <constraint firstItem="baQ-NY-RnQ" firstAttribute="trailing" secondItem="c8X-28-qZR" secondAttribute="trailing" constant="-14" id="RSx-cn-xrr"/>
+                                    <constraint firstItem="baQ-NY-RnQ" firstAttribute="leading" secondItem="HHN-x8-oxC" secondAttribute="trailing" id="W4n-VS-F9x"/>
+                                    <constraint firstItem="c8X-28-qZR" firstAttribute="leading" secondItem="ywr-6J-2bM" secondAttribute="trailing" constant="2" id="YcG-2I-US1"/>
+                                    <constraint firstItem="SJk-Am-Etv" firstAttribute="leading" secondItem="baQ-NY-RnQ" secondAttribute="trailing" id="agn-pB-VLq"/>
+                                    <constraint firstAttribute="trailing" secondItem="3lF-7Z-EZY" secondAttribute="trailing" constant="9" id="bSg-AO-5x4"/>
+                                    <constraint firstItem="SJk-Am-Etv" firstAttribute="centerY" secondItem="baQ-NY-RnQ" secondAttribute="centerY" id="bf6-8k-wNd"/>
+                                    <constraint firstItem="c8X-28-qZR" firstAttribute="centerY" secondItem="ywr-6J-2bM" secondAttribute="centerY" id="r5x-Nf-83y"/>
+                                    <constraint firstItem="ywr-6J-2bM" firstAttribute="top" secondItem="bWn-QI-VWs" secondAttribute="top" constant="9" id="uOr-7H-dS1"/>
+                                    <constraint firstItem="WX6-ru-zN3" firstAttribute="centerY" secondItem="ywr-6J-2bM" secondAttribute="centerY" id="yeI-qT-Kpg"/>
+                                    <constraint firstItem="baQ-NY-RnQ" firstAttribute="top" secondItem="ywr-6J-2bM" secondAttribute="bottom" constant="4" id="zGn-7a-lQC"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bWn-QI-VWs" secondAttribute="trailing" id="3YN-uj-b7z"/>
+                            <constraint firstAttribute="bottom" secondItem="StW-Ln-CCd" secondAttribute="bottom" id="82X-EA-YfI"/>
+                            <constraint firstItem="bWn-QI-VWs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Cqr-eQ-Esr"/>
+                            <constraint firstAttribute="trailing" secondItem="6SF-fH-qPH" secondAttribute="trailing" constant="20" id="MJN-6i-873"/>
+                            <constraint firstItem="StW-Ln-CCd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="NpI-bf-XlV"/>
+                            <constraint firstItem="6SF-fH-qPH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="OOV-eY-SB1"/>
+                            <constraint firstItem="6SF-fH-qPH" firstAttribute="top" secondItem="bWn-QI-VWs" secondAttribute="bottom" id="mgg-fb-QyX"/>
+                            <constraint firstItem="bWn-QI-VWs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="pLw-fi-mLs"/>
+                            <constraint firstAttribute="trailing" secondItem="StW-Ln-CCd" secondAttribute="trailing" constant="20" id="yj0-h3-aqj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LCDControlsContainerView" destination="0p6-iq-Cub" id="3Ja-Yf-8hd"/>
+                        <outlet property="backwardButton" destination="WX6-ru-zN3" id="7cN-6X-cjS"/>
+                        <outlet property="closeButton" destination="ohb-F3-Ff2" id="5gF-TS-64Y"/>
+                        <outlet property="drawerButton" destination="DZ8-Co-jYJ" id="uRT-FX-MOs"/>
+                        <outlet property="drawerContainerView" destination="StW-Ln-CCd" id="Ywz-1E-kor"/>
+                        <outlet property="drawerShadowView" destination="6SF-fH-qPH" id="CTr-8I-4UK"/>
+                        <outlet property="forwardButton" destination="c8X-28-qZR" id="dLf-JV-dkY"/>
+                        <outlet property="isLiveLabel" destination="qfk-ix-RrA" id="szo-X3-urz"/>
+                        <outlet property="maximizeButton" destination="iEu-47-rPY" id="FId-g6-ZCF"/>
+                        <outlet property="minimizeButton" destination="uhd-3H-QyJ" id="7rq-qs-8sJ"/>
+                        <outlet property="playPauseButton" destination="ywr-6J-2bM" id="Ftb-4h-Rko"/>
+                        <outlet property="primaryTimeLabel" destination="eD7-aF-fcC" id="195-bv-Fe8"/>
+                        <outlet property="secondaryTimeLabel" destination="Brn-QC-pDw" id="YYs-c5-0Rl"/>
+                        <outlet property="snapBackButton" destination="uUL-TJ-Hln" id="QJg-hQ-0gU"/>
+                        <outlet property="trackInfoView" destination="dRt-GI-k4p" id="arQ-fA-oxg"/>
+                        <outlet property="trackProgressSlider" destination="Quo-Im-xHH" id="LDk-Xp-Fs9"/>
+                        <outlet property="volumeMaxButton" destination="SJk-Am-Etv" id="EhM-wZ-c3n"/>
+                        <outlet property="volumeMinButton" destination="HHN-x8-oxC" id="UgJ-HB-tRc"/>
+                        <outlet property="volumeSlider" destination="baQ-NY-RnQ" id="RFL-EJ-FHy"/>
+                        <outlet property="windowButtonsView" destination="Tdt-eJ-3oX" id="q8V-ck-ONF"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="tzq-wP-7Hb"/>
+            </objects>
+            <point key="canvasLocation" x="71.5" y="555"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="14" height="13"/>
+        <image name="repeat_off" width="16" height="11"/>
+        <image name="shuffle_off" width="16" height="11"/>
+        <image name="snapback" width="11" height="11"/>
+        <image name="speaker_hi" width="12" height="12"/>
+        <image name="speaker_lo" width="12" height="12"/>
+    </resources>
+</document>
