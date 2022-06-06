@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Music Widget/Base.lproj/Main.storyboard" source-language="en" target-language="ja" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="1Xt-HY-uBw.title" xml:space="preserve">
+        <source>Music Widget</source>
+        <target>音乐小组件</target>
+        <note>Class = "NSMenuItem"; title = "Music Widget"; ObjectID = "1Xt-HY-uBw";</note>
+      </trans-unit>
+      <trans-unit id="2cu-2G-bdz.title" xml:space="preserve">
+        <source>Volume Up</source>
+        <target>调高音量</target>
+        <note>Class = "NSMenuItem"; title = "Volume Up"; ObjectID = "2cu-2G-bdz";</note>
+      </trans-unit>
+      <trans-unit id="4sb-4s-VLi.title" xml:space="preserve">
+        <source>Quit Music Widget</source>
+        <target>退出音乐小组件</target>
+        <note>Class = "NSMenuItem"; title = "Quit Music Widget"; ObjectID = "4sb-4s-VLi";</note>
+      </trans-unit>
+      <trans-unit id="5kV-Vb-QxS.title" xml:space="preserve">
+        <source>About Music Widget</source>
+        <target>关于音乐小组件</target>
+        <note>Class = "NSMenuItem"; title = "About Music Widget"; ObjectID = "5kV-Vb-QxS";</note>
+      </trans-unit>
+      <trans-unit id="8XE-lj-Wco.title" xml:space="preserve">
+        <source>Volume Down</source>
+        <target>调低音量</target>
+        <note>Class = "NSMenuItem"; title = "Volume Down"; ObjectID = "8XE-lj-Wco";</note>
+      </trans-unit>
+      <trans-unit id="8fc-5F-l6K.title" xml:space="preserve">
+        <source>Select Playlist:</source>
+        <target>选择播放列表:</target>
+        <note>Class = "NSTextFieldCell"; title = "Select Playlist:"; ObjectID = "8fc-5F-l6K";</note>
+      </trans-unit>
+      <trans-unit id="AYu-sK-qS6.title" xml:space="preserve">
+        <source>Main Menu</source>
+        <target>主菜单</target>
+        <note>Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6";</note>
+      </trans-unit>
+      <trans-unit id="BLC-LX-O2Y.title" xml:space="preserve">
+        <source>Close</source>
+        <target>关闭</target>
+        <note>Class = "NSMenuItem"; title = "Close"; ObjectID = "BLC-LX-O2Y";</note>
+      </trans-unit>
+      <trans-unit id="BOF-NM-1cW.title" xml:space="preserve">
+        <source>Preferences…</source>
+        <target>偏好设置…</target>
+        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW";</note>
+      </trans-unit>
+      <trans-unit id="Brn-QC-pDw.ibShadowedToolTip" xml:space="preserve">
+        <source>Elapsed time</source>
+        <target>播放时间</target>
+        <note>Class = "NSTextField"; ibShadowedToolTip = "Elapsed time"; ObjectID = "Brn-QC-pDw";</note>
+      </trans-unit>
+      <trans-unit id="DiE-yb-1qh.title" xml:space="preserve">
+        <source>LIVE</source>
+        <target>实时</target>
+        <note>Class = "NSTextFieldCell"; title = "LIVE"; ObjectID = "DiE-yb-1qh";</note>
+      </trans-unit>
+      <trans-unit id="F2S-fz-NVQ.title" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ";</note>
+      </trans-unit>
+      <trans-unit id="FKE-Sm-Kum.title" xml:space="preserve">
+        <source>Music Widget Help</source>
+        <target>音乐小组件帮助</target>
+        <note>Class = "NSMenuItem"; title = "Music Widget Help"; ObjectID = "FKE-Sm-Kum";</note>
+      </trans-unit>
+      <trans-unit id="GEO-Iw-cKr.title" xml:space="preserve">
+        <source>Controls</source>
+        <target>控制</target>
+        <note>Class = "NSMenu"; title = "Controls"; ObjectID = "GEO-Iw-cKr";</note>
+      </trans-unit>
+      <trans-unit id="IQv-IB-iLA.title" xml:space="preserve">
+        <source>Music Widget</source>
+        <target>音乐小组件</target>
+        <note>Class = "NSWindow"; title = "Music Widget"; ObjectID = "IQv-IB-iLA";</note>
+      </trans-unit>
+      <trans-unit id="Kd2-mp-pUS.title" xml:space="preserve">
+        <source>Show All</source>
+        <target>显示全部</target>
+        <note>Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS";</note>
+      </trans-unit>
+      <trans-unit id="LE2-aR-0XJ.title" xml:space="preserve">
+        <source>Bring All to Front</source>
+        <target>前置全部窗口</target>
+        <note>Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ";</note>
+      </trans-unit>
+      <trans-unit id="NMo-om-nkz.title" xml:space="preserve">
+        <source>Services</source>
+        <target>服务</target>
+        <note>Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz";</note>
+      </trans-unit>
+      <trans-unit id="OY7-WF-poV.title" xml:space="preserve">
+        <source>Minimize</source>
+        <target>最小化</target>
+        <note>Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV";</note>
+      </trans-unit>
+      <trans-unit id="Olw-nP-bQN.title" xml:space="preserve">
+        <source>Hide Music Widget</source>
+        <target>隐藏音乐小组件</target>
+        <note>Class = "NSMenuItem"; title = "Hide Music Widget"; ObjectID = "Olw-nP-bQN";</note>
+      </trans-unit>
+      <trans-unit id="Qr3-pr-Ha2.title" xml:space="preserve">
+        <source>Check for Updates…</source>
+        <target>检查更新…</target>
+        <note>Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "Qr3-pr-Ha2";</note>
+      </trans-unit>
+      <trans-unit id="R4o-n2-Eq4.title" xml:space="preserve">
+        <source>Zoom</source>
+        <target>缩放</target>
+        <note>Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4";</note>
+      </trans-unit>
+      <trans-unit id="Td7-aD-5lo.title" xml:space="preserve">
+        <source>Window</source>
+        <target>窗口</target>
+        <note>Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo";</note>
+      </trans-unit>
+      <trans-unit id="Vdr-fp-XzO.title" xml:space="preserve">
+        <source>Hide Others</source>
+        <target>隐藏其他</target>
+        <note>Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO";</note>
+      </trans-unit>
+      <trans-unit id="WX6-ru-zN3.ibShadowedToolTip" xml:space="preserve">
+        <source>Play previous track; hold to seek backwards</source>
+        <target>播放上一个音轨; 按住以快退播放</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Play previous track; hold to seek backwards"; ObjectID = "WX6-ru-zN3";</note>
+      </trans-unit>
+      <trans-unit id="XXI-V4-V6S.title" xml:space="preserve">
+        <source>Music Widget</source>
+        <target>音乐小组件</target>
+        <note>Class = "NSWindow"; title = "Music Widget"; ObjectID = "XXI-V4-V6S";</note>
+      </trans-unit>
+      <trans-unit id="YBf-Yt-Edt.title" xml:space="preserve">
+        <source>0:00</source>
+        <target>0:00</target>
+        <note>Class = "NSTextFieldCell"; title = "0:00"; ObjectID = "YBf-Yt-Edt";</note>
+      </trans-unit>
+      <trans-unit id="aUF-d1-5bR.title" xml:space="preserve">
+        <source>Window</source>
+        <target>窗口</target>
+        <note>Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR";</note>
+      </trans-unit>
+      <trans-unit id="acN-gK-c40.ibShadowedToolTip" xml:space="preserve">
+        <source>Increases the Music app volume</source>
+        <target>调高音乐应用中的音量</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Increases the Music app volume"; ObjectID = "acN-gK-c40";</note>
+      </trans-unit>
+      <trans-unit id="av9-fV-R59.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "av9-fV-R59";</note>
+      </trans-unit>
+      <trans-unit id="bLZ-pM-lrn.title" xml:space="preserve">
+        <source>Play</source>
+        <target>播放</target>
+        <note>Class = "NSButtonCell"; title = "Play"; ObjectID = "bLZ-pM-lrn";</note>
+      </trans-unit>
+      <trans-unit id="bib-Uj-vzu.title" xml:space="preserve">
+        <source>File</source>
+        <target>文件</target>
+        <note>Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu";</note>
+      </trans-unit>
+      <trans-unit id="c8X-28-qZR.ibShadowedToolTip" xml:space="preserve">
+        <source>Play next track; hold to seek forward</source>
+        <target>播放下一个音轨; 按住以快进播放</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Play next track; hold to seek forward"; ObjectID = "c8X-28-qZR";</note>
+      </trans-unit>
+      <trans-unit id="dMs-cI-mzQ.title" xml:space="preserve">
+        <source>File</source>
+        <target>文件</target>
+        <note>Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ";</note>
+      </trans-unit>
+      <trans-unit id="f3B-Z4-X0o.ibShadowedToolTip" xml:space="preserve">
+        <source>Set shuffle on or off</source>
+        <target>切换随机播放</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Set shuffle on or off"; ObjectID = "f3B-Z4-X0o";</note>
+      </trans-unit>
+      <trans-unit id="hz9-B4-Xy5.title" xml:space="preserve">
+        <source>Services</source>
+        <target>服务</target>
+        <note>Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5";</note>
+      </trans-unit>
+      <trans-unit id="i6e-BW-aWp.title" xml:space="preserve">
+        <source>Previous</source>
+        <target>上一首</target>
+        <note>Class = "NSMenuItem"; title = "Previous"; ObjectID = "i6e-BW-aWp";</note>
+      </trans-unit>
+      <trans-unit id="iId-UZ-jPY.ibShadowedToolTip" xml:space="preserve">
+        <source>Repeat all, one, or none</source>
+        <target>全部循环、单曲循环或禁止循环</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Repeat all, one, or none"; ObjectID = "iId-UZ-jPY";</note>
+      </trans-unit>
+      <trans-unit id="ib0-07-MM2.title" xml:space="preserve">
+        <source>Play/Pause</source>
+        <target>播放/暂停</target>
+        <note>Class = "NSMenuItem"; title = "Play/Pause"; ObjectID = "ib0-07-MM2";</note>
+      </trans-unit>
+      <trans-unit id="iit-aw-bGp.title" xml:space="preserve">
+        <source>i</source>
+        <target>i</target>
+        <note>Class = "NSButtonCell"; title = "i"; ObjectID = "iit-aw-bGp";</note>
+      </trans-unit>
+      <trans-unit id="j4B-bV-mfm.title" xml:space="preserve">
+        <source>Next</source>
+        <target>下一首</target>
+        <note>Class = "NSMenuItem"; title = "Next"; ObjectID = "j4B-bV-mfm";</note>
+      </trans-unit>
+      <trans-unit id="jxT-CU-nIS.title" xml:space="preserve">
+        <source>Controls</source>
+        <target>控制</target>
+        <note>Class = "NSMenuItem"; title = "Controls"; ObjectID = "jxT-CU-nIS";</note>
+      </trans-unit>
+      <trans-unit id="lLJ-vu-NaJ.ibShadowedToolTip" xml:space="preserve">
+        <source>Decreases the Music app volume</source>
+        <target>调低音乐应用中的音量</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Decreases the Music app volume"; ObjectID = "lLJ-vu-NaJ";</note>
+      </trans-unit>
+      <trans-unit id="p6K-yu-bUf.title" xml:space="preserve">
+        <source>Keep Above All Other Windows</source>
+        <target>置于其他应用窗口上方</target>
+        <note>Class = "NSMenuItem"; title = "Keep Above All Other Windows"; ObjectID = "p6K-yu-bUf";</note>
+      </trans-unit>
+      <trans-unit id="qfk-ix-RrA.ibShadowedToolTip" xml:space="preserve">
+        <source>Live audio is currently playing</source>
+        <target>正在播放实时音频</target>
+        <note>Class = "NSTextField"; ibShadowedToolTip = "Live audio is currently playing"; ObjectID = "qfk-ix-RrA";</note>
+      </trans-unit>
+      <trans-unit id="s6R-sF-b8v.title" xml:space="preserve">
+        <source>Open "Music"</source>
+        <target>打开 “音乐” 应用</target>
+        <note>Class = "NSMenuItem"; title = "Open \"Music\""; ObjectID = "s6R-sF-b8v";</note>
+      </trans-unit>
+      <trans-unit id="uQy-DD-JDr.title" xml:space="preserve">
+        <source>Music Widget</source>
+        <target>音乐小组件</target>
+        <note>Class = "NSMenu"; title = "Music Widget"; ObjectID = "uQy-DD-JDr";</note>
+      </trans-unit>
+      <trans-unit id="wDg-JR-1Wj.title" xml:space="preserve">
+        <source>Terms and Conditions</source>
+        <target>条款与条件</target>
+        <note>Class = "NSMenuItem"; title = "Terms and Conditions"; ObjectID = "wDg-JR-1Wj";</note>
+      </trans-unit>
+      <trans-unit id="wZv-f7-qkF.ibShadowedToolTip" xml:space="preserve">
+        <source>Close</source>
+        <target>关闭</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Close"; ObjectID = "wZv-f7-qkF";</note>
+      </trans-unit>
+      <trans-unit id="wpr-3q-Mcd.title" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd";</note>
+      </trans-unit>
+      <trans-unit id="ywr-6J-2bM.ibShadowedToolTip" xml:space="preserve">
+        <source>Play or pause the current audio</source>
+        <target>播放或暂停当前的音频</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Play or pause the current audio"; ObjectID = "ywr-6J-2bM";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Music Widget/en.lproj/InfoPlist.strings" source-language="en" target-language="ja" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Music Widget</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSAppleEventsUsageDescription" xml:space="preserve">
+        <source>Music Widget uses AppleEvents in order to interface with the Music app.</source>
+        <target>本音乐小组件使用AppleEvents以控制音乐应用的播放行为。</target>
+        <note>Privacy - AppleEvents Sending Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2021-2022 Mario A Guzman
+All rights reserved.</source>
+        <target>版权所有 © 2021-2022 Mario A Guzman
+保留一切权利.</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Music Widget/en.lproj/Localizable.strings" source-language="en" target-language="ja" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="0:00" xml:space="preserve">
+        <source>0:00</source>
+        <target>0:00</target>
+        <note>For UI labels: 0:00</note>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target>关于</target>
+        <note>About window title</note>
+      </trans-unit>
+      <trans-unit id="Album" xml:space="preserve">
+        <source>Album</source>
+        <target>音乐专辑</target>
+        <note>For UI labels: Album</note>
+      </trans-unit>
+      <trans-unit id="Artist" xml:space="preserve">
+        <source>Artist</source>
+        <target>艺术家</target>
+        <note>For UI labels: Artist</note>
+      </trans-unit>
+      <trans-unit id="Elapsed Time" xml:space="preserve">
+        <source>Elapsed Time</source>
+        <target>播放时间</target>
+        <note>For UI labels: Elapsed Time</note>
+      </trans-unit>
+      <trans-unit id="Fast Forward" xml:space="preserve">
+        <source>Fast Forward</source>
+        <target>快退播放</target>
+        <note>For UI labels: Fast Forward</note>
+      </trans-unit>
+      <trans-unit id="General" xml:space="preserve">
+        <source>General</source>
+        <target>通用设置</target>
+        <note>Title for General tab</note>
+      </trans-unit>
+      <trans-unit id="Interface" xml:space="preserve">
+        <source>Interface</source>
+        <target>用户界面</target>
+        <note>Title for Interface tab</note>
+      </trans-unit>
+      <trans-unit id="Keep Above All Other Windows" xml:space="preserve">
+        <source>Keep Above All Other Windows</source>
+        <target>置于其他应用窗口上方</target>
+        <note>For Menu Command labels: Keep Above All Other Windows</note>
+      </trans-unit>
+      <trans-unit id="LIVE" xml:space="preserve">
+        <source>LIVE</source>
+        <target>实时</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Live Stream" xml:space="preserve">
+        <source>Live Stream</source>
+        <target>实时流媒体</target>
+        <note>For UI labels: Live Stream</note>
+      </trans-unit>
+      <trans-unit id="Music is not open" xml:space="preserve">
+        <source>Music is not open</source>
+        <target>尚未启动音乐应用</target>
+        <note>'Music is not open' displayed in LCD</note>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <target>下一首</target>
+        <note>For UI labels: Next</note>
+      </trans-unit>
+      <trans-unit id="No Song" xml:space="preserve">
+        <source>No Song</source>
+        <target>无歌曲</target>
+        <note>'No Song' displayed in LCD</note>
+      </trans-unit>
+      <trans-unit id="Now Playing" xml:space="preserve">
+        <source>Now Playing</source>
+        <target>正在播放</target>
+        <note>For UI labels: Now Playing</note>
+      </trans-unit>
+      <trans-unit id="Open &quot;Music&quot;" xml:space="preserve">
+        <source>Open "Music"</source>
+        <target>打开 “音乐” 应用</target>
+        <note>Command to open main Music app
+   For Menu Command labels: Open \"Music\"</note>
+      </trans-unit>
+      <trans-unit id="Pause" xml:space="preserve">
+        <source>Pause</source>
+        <target>暂停</target>
+        <note>For UI labels: Pause</note>
+      </trans-unit>
+      <trans-unit id="Play" xml:space="preserve">
+        <source>Play</source>
+        <target>播放</target>
+        <note>For UI labels: Play</note>
+      </trans-unit>
+      <trans-unit id="Play or pause the current track" xml:space="preserve">
+        <source>Play or pause the current track</source>
+        <target>播放或暂停当前音轨</target>
+        <note>For UI labels: Play or pause the current track</note>
+      </trans-unit>
+      <trans-unit id="Play or stop playing live audio" xml:space="preserve">
+        <source>Play or stop playing live audio</source>
+        <target>播放或暂停实时音频</target>
+        <note>For UI labels: Play or stop playing live audio</note>
+      </trans-unit>
+      <trans-unit id="Preferences" xml:space="preserve">
+        <source>Preferences</source>
+        <target>偏好设置</target>
+        <note>Window Title for Preferences</note>
+      </trans-unit>
+      <trans-unit id="Previous" xml:space="preserve">
+        <source>Previous</source>
+        <target>上一首</target>
+        <note>For UI labels: Previous</note>
+      </trans-unit>
+      <trans-unit id="Remaining Time" xml:space="preserve">
+        <source>Remaining Time</source>
+        <target>剩余时间</target>
+        <note>For UI labels: Remaining Time</note>
+      </trans-unit>
+      <trans-unit id="Rewind" xml:space="preserve">
+        <source>Rewind</source>
+        <target>倒回</target>
+        <note>For UI labels: Rewind</note>
+      </trans-unit>
+      <trans-unit id="Stop" xml:space="preserve">
+        <source>Stop</source>
+        <target>停止</target>
+        <note>For UI labels: Stop</note>
+      </trans-unit>
+      <trans-unit id="Streaming Track" xml:space="preserve">
+        <source>Streaming Track</source>
+        <target>流媒体音轨</target>
+        <note>For UI labels: Streaming Track</note>
+      </trans-unit>
+      <trans-unit id="Track" xml:space="preserve">
+        <source>Track</source>
+        <target>音轨</target>
+        <note>For UI labels: Track</note>
+      </trans-unit>
+      <trans-unit id="Updates" xml:space="preserve">
+        <source>Updates</source>
+        <target>检查更新</target>
+        <note>Title for Updates tab</note>
+      </trans-unit>
+      <trans-unit id="Volume Down" xml:space="preserve">
+        <source>Volume Down</source>
+        <target>调低音量</target>
+        <note>For UI labels: Volume Down</note>
+      </trans-unit>
+      <trans-unit id="Volume Up" xml:space="preserve">
+        <source>Volume Up</source>
+        <target>调高音量</target>
+        <note>For UI labels: Volume Up</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Music Widget/Preferences/Base.lproj/AppPreferences.storyboard" source-language="en" target-language="ja" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="2lp-RE-3ql.ibShadowedToolTip" xml:space="preserve">
+        <source>Allows Music Widget to switch between light and dark mode based on what is set in System Preferences</source>
+        <target>允许音乐小组件根据系统当前的主题风格在明亮模式和黑暗模式之间自动切换</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Allows Music Widget to switch between light and dark mode based on what is set in System Preferences"; ObjectID = "2lp-RE-3ql";</note>
+      </trans-unit>
+      <trans-unit id="3RT-9N-wIm.title" xml:space="preserve">
+        <source>App Updates:</source>
+        <target>应用更新:</target>
+        <note>Class = "NSTextFieldCell"; title = "App Updates:"; ObjectID = "3RT-9N-wIm";</note>
+      </trans-unit>
+      <trans-unit id="5Yf-lh-brO.ibShadowedToolTip" xml:space="preserve">
+        <source>Keeps Music Widget always visible by keeping above all other app windows</source>
+        <target>将音乐小部件置于所有应用窗口上方以确保始终可见</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Keeps Music Widget always visible by keeping above all other app windows"; ObjectID = "5Yf-lh-brO";</note>
+      </trans-unit>
+      <trans-unit id="6a2-0S-rFp.title" xml:space="preserve">
+        <source>Update Dock icon</source>
+        <target>自动更新程序坞图标</target>
+        <note>Class = "NSButtonCell"; title = "Update Dock icon"; ObjectID = "6a2-0S-rFp";</note>
+      </trans-unit>
+      <trans-unit id="9Ps-gN-xEU.title" xml:space="preserve">
+        <source>Window:</source>
+        <target>应用窗口:</target>
+        <note>Class = "NSTextFieldCell"; title = "Window:"; ObjectID = "9Ps-gN-xEU";</note>
+      </trans-unit>
+      <trans-unit id="91y-ef-HnU.ibShadowedToolTip" xml:space="preserve">
+        <source>Displays the current position of the track in time</source>
+        <target>显示当前音轨已播放的时间</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Displays the current position of the track in time"; ObjectID = "91y-ef-HnU";</note>
+      </trans-unit>
+      <trans-unit id="AO8-fs-1Zg.ibShadowedToolTip" xml:space="preserve">
+        <source>Displays the time remaining for the track to end</source>
+        <target>显示当前音轨剩余的播放时间</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Displays the time remaining for the track to end"; ObjectID = "AO8-fs-1Zg";</note>
+      </trans-unit>
+      <trans-unit id="Brs-k7-YJD.title" xml:space="preserve">
+        <source>Controls:</source>
+        <target>按钮控制:</target>
+        <note>Class = "NSTextFieldCell"; title = "Controls:"; ObjectID = "Brs-k7-YJD"; Note = "General Preferences \"Controls\" Section Header";</note>
+      </trans-unit>
+      <trans-unit id="Gt0-gT-uSx.title" xml:space="preserve">
+        <source>Remaining time</source>
+        <target>剩余播放时间</target>
+        <note>Class = "NSButtonCell"; title = "Remaining time"; ObjectID = "Gt0-gT-uSx";</note>
+      </trans-unit>
+      <trans-unit id="J4k-hG-qgP.title" xml:space="preserve">
+        <source>Time Label:</source>
+        <target>时间标签:</target>
+        <note>Class = "NSTextFieldCell"; title = "Time Label:"; ObjectID = "J4k-hG-qgP";</note>
+      </trans-unit>
+      <trans-unit id="M5Z-LT-hOZ.title" xml:space="preserve">
+        <source>Keep Classic Appearance</source>
+        <target>保持经典显示风格</target>
+        <note>Class = "NSButtonCell"; title = "Keep Classic Appearance"; ObjectID = "M5Z-LT-hOZ";</note>
+      </trans-unit>
+      <trans-unit id="Mxl-Vc-u2u.title" xml:space="preserve">
+        <source>[Date]</source>
+        <target>[Date]</target>
+        <note>Class = "NSTextFieldCell"; title = "[Date]"; ObjectID = "Mxl-Vc-u2u";</note>
+      </trans-unit>
+      <trans-unit id="NAf-ve-cCj.ibShadowedToolTip" xml:space="preserve">
+        <source>Keeps Music Widget in light mode to match the classic iTunes widget</source>
+        <target>将音乐小部件保持在轻量模式以匹配iTunes经典播放组件风格</target>
+        <note>Class = "NSButton"; ibShadowedToolTip = "Keeps Music Widget in light mode to match the classic iTunes widget"; ObjectID = "NAf-ve-cCj";</note>
+      </trans-unit>
+      <trans-unit id="Tb7-kg-ZHP.title" xml:space="preserve">
+        <source>Hourly</source>
+        <target>每小时</target>
+        <note>Class = "NSMenuItem"; title = "Hourly"; ObjectID = "Tb7-kg-ZHP";</note>
+      </trans-unit>
+      <trans-unit id="U1J-jw-Spa.title" xml:space="preserve">
+        <source>Updates</source>
+        <target>检查更新</target>
+        <note>Class = "NSViewController"; title = "Updates"; ObjectID = "U1J-jw-Spa";</note>
+      </trans-unit>
+      <trans-unit id="UGd-Xj-x6T.title" xml:space="preserve">
+        <source>Keep Above All Other Windows</source>
+        <target>置于其他应用窗口上方</target>
+        <note>Class = "NSButtonCell"; title = "Keep Above All Other Windows"; ObjectID = "UGd-Xj-x6T";</note>
+      </trans-unit>
+      <trans-unit id="WE6-qw-PH5.title" xml:space="preserve">
+        <source>Monthly</source>
+        <target>每月</target>
+        <note>Class = "NSMenuItem"; title = "Monthly"; ObjectID = "WE6-qw-PH5";</note>
+      </trans-unit>
+      <trans-unit id="ZCM-Rz-k5X.title" xml:space="preserve">
+        <source>Match System Appearance</source>
+        <target>匹配系统主题</target>
+        <note>Class = "NSButtonCell"; title = "Match System Appearance"; ObjectID = "ZCM-Rz-k5X";</note>
+      </trans-unit>
+      <trans-unit id="Zf0-JL-dv5.title" xml:space="preserve">
+        <source>Display the elapsed time or remaining time of the current track in the LCD display.</source>
+        <target>选择在播放界面上显示当前音轨的已播放时间或是剩余时间。</target>
+        <note>Class = "NSTextFieldCell"; title = "Display the elapsed time or remaining time of the current track in the LCD display."; ObjectID = "Zf0-JL-dv5";</note>
+      </trans-unit>
+      <trans-unit id="ZrU-wT-NJK.title" xml:space="preserve">
+        <source>This option is also available in the Window menu in the app's menu bar.</source>
+        <target>您也可以在本应用菜单栏的窗口菜单中找到此选项。</target>
+        <note>Class = "NSTextFieldCell"; title = "This option is also available in the Window menu in the app's menu bar."; ObjectID = "ZrU-wT-NJK";</note>
+      </trans-unit>
+      <trans-unit id="bWq-at-TWg.title" xml:space="preserve">
+        <source>Automatically Downloads Updates</source>
+        <target>自动下载应用更新</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Downloads Updates"; ObjectID = "bWq-at-TWg";</note>
+      </trans-unit>
+      <trans-unit id="clz-ky-mxP.title" xml:space="preserve">
+        <source>Frequency:</source>
+        <target>检查频率:</target>
+        <note>Class = "NSTextFieldCell"; title = "Frequency:"; ObjectID = "clz-ky-mxP";</note>
+      </trans-unit>
+      <trans-unit id="cvL-ps-daB.title" xml:space="preserve">
+        <source>Weekly</source>
+        <target>每周</target>
+        <note>Class = "NSMenuItem"; title = "Weekly"; ObjectID = "cvL-ps-daB";</note>
+      </trans-unit>
+      <trans-unit id="efK-8v-mxP.title" xml:space="preserve">
+        <source>Appearance:</source>
+        <target>主题风格:</target>
+        <note>Class = "NSTextFieldCell"; title = "Appearance:"; ObjectID = "efK-8v-mxP";</note>
+      </trans-unit>
+      <trans-unit id="hJp-JV-cAP.title" xml:space="preserve">
+        <source>Preferences</source>
+        <target>偏好设置</target>
+        <note>Class = "NSWindow"; title = "Preferences"; ObjectID = "hJp-JV-cAP";</note>
+      </trans-unit>
+      <trans-unit id="hfA-h1-trm.title" xml:space="preserve">
+        <source>Last Checked</source>
+        <target>最后检查日期</target>
+        <note>Class = "NSTextFieldCell"; title = "Last Checked"; ObjectID = "hfA-h1-trm";</note>
+      </trans-unit>
+      <trans-unit id="i3P-ZJ-yzP.title" xml:space="preserve">
+        <source>General</source>
+        <target>通用设置</target>
+        <note>Class = "NSViewController"; title = "General"; ObjectID = "i3P-ZJ-yzP";</note>
+      </trans-unit>
+      <trans-unit id="jY1-E5-teb.title" xml:space="preserve">
+        <source>Automatically Check for Updates</source>
+        <target>自动检查应用更新</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "jY1-E5-teb";</note>
+      </trans-unit>
+      <trans-unit id="kx2-CZ-UiD.title" xml:space="preserve">
+        <source>Show Volume buttons</source>
+        <target>显示音量按钮</target>
+        <note>Class = "NSButtonCell"; title = "Show Volume buttons"; ObjectID = "kx2-CZ-UiD"; Note = "Checkbox to show (or hide) the volume buttons";</note>
+      </trans-unit>
+      <trans-unit id="mVI-5e-4Kz.title" xml:space="preserve">
+        <source> Check for Updates </source>
+        <target>立即检查更新</target>
+        <note>Class = "NSButtonCell"; title = " Check for Updates "; ObjectID = "mVI-5e-4Kz";</note>
+      </trans-unit>
+      <trans-unit id="qPV-nR-3CN.title" xml:space="preserve">
+        <source>Elapsed time</source>
+        <target>当前播放时间</target>
+        <note>Class = "NSButtonCell"; title = "Elapsed time"; ObjectID = "qPV-nR-3CN";</note>
+      </trans-unit>
+      <trans-unit id="tg8-uG-BrF.title" xml:space="preserve">
+        <source>Daily</source>
+        <target>每天</target>
+        <note>Class = "NSMenuItem"; title = "Daily"; ObjectID = "tg8-uG-BrF";</note>
+      </trans-unit>
+      <trans-unit id="xTU-I5-lwH.title" xml:space="preserve">
+        <source>Interface</source>
+        <target>用户界面</target>
+        <note>Class = "NSViewController"; title = "Interface"; ObjectID = "xTU-I5-lwH";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
