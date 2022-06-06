@@ -317,7 +317,7 @@ All rights reserved.</source>
       </trans-unit>
       <trans-unit id="Fast Forward" xml:space="preserve">
         <source>Fast Forward</source>
-        <target>快退播放</target>
+        <target>快进</target>
         <note>For UI labels: Fast Forward</note>
       </trans-unit>
       <trans-unit id="General" xml:space="preserve">
